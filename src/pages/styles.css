@@ -1,0 +1,52 @@
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure the image is fully responsive */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  max-width: 100%; /* To ensure the image does not overflow */
+}
+
+.shop-image {
+  width: 100%; /* Make the image take full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 1802px; /* Optional: set the maximum width of the image */
+  filter: brightness(0.9) contrast(1.1); /* Add a subtle CSS filter for visual effect */
+}
+
+/* Additional filter options you can experiment with */
+.shop-image:hover {
+  filter: brightness(1) contrast(1.2); /* Increase brightness and contrast on hover */
+  transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.brands-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.brands-wrapper {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  width: max-content;
+}
+
+.brand {
+  margin: 0 20px; /* Adjust spacing between brands as needed */
+}
+
+.brand-img {
+  max-width: 150px; /* Adjust size as needed */
+  height: auto;
+}
