@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
+import Shop from '../assets/Shop.png';
 import Footer from "../include/Footer";
 import Navbar from "../include/Navbar";
-import Shop from '../assets/Shop.png';
-import Logo from "../assets/Logo.jpg";
 import Brand1 from "../assets/Sail.png";
 import Brand2 from "../assets/TATA Steel.jpg";
 import Brand3 from "../assets/Ultratech.jpg";
@@ -11,23 +10,13 @@ import Brand5 from "../assets/Godrej.jpeg";
 import Brand6 from "../assets/Logo.jpg";
 import Brand7 from "../assets/Logo.jpg";
 import Brand8 from "../assets/Logo.jpg";
-
+import { useInView } from "react-intersection-observer";
 
 import "./styles.css";
 import { Link } from "react-router-dom";
 
 function Home() {
-    const productCategories = [
-        { id: 1, name: 'Flat Products', description: 'Description for Category 1', image: Logo },
-        { id: 2, name: 'Long Product', description: 'Description for Category 2', image: Logo },
-        { id: 3, name: 'Re-Bar', description: 'Description for Category 3', image: Logo },
-        { id: 4, name: 'Pipe and Hollow Section', description: 'Description for Category 4', image: Logo },
-        { id: 5, name: 'Round, Square and flat Bar', description: 'Description for Category 5', image: Logo },
-        { id: 6, name: 'Roofing Sheets', description: 'Description for Category 6', image: Logo },
-        { id: 7, name: 'Cement', description: 'Description for Category 7', image: Logo },
-        { id: 8, name: 'Godrej Safes', description: 'Description for Category 8', image: Logo },
-        { id: 9, name: 'Hardware', description: 'Description for Category 9', image: Logo }
-    ];
+    const { ref, inView } = useInView();
 
     const brands = [
         Brand1, Brand2, Brand3, Brand4, Brand5, Brand6, Brand7, Brand8
@@ -39,28 +28,30 @@ function Home() {
             <div className="image-container">
                 <img src={Shop} alt="Shop" className="img-fluid shop-image" />
             </div>
-            <div className="container my-4">
-                <h2 className="mb-4 text-center">Products We Offer</h2>
-                <div className="row">
-                    {productCategories.map((category) => (
-                        <div className="col-md-4 mb-4" key={category.id}>
-                            <div className="card h-100 card-hover">
-                                <img src={category.image} className="card-img-top" alt={category.name} />
-                                <div className="card-body">
-                                    <h5 className="card-title">{category.name}</h5>
-                                    <p className="card-text">{category.description}</p>
-                                    <Link to={`/products/${category.id}`} className="btn btn-primary">
-                                        View Products
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
+
+            <div className="bg-warning bg-gradient">
+                <div className="text-center py-4 ms-5 me-5 bg-warning bg-gradient">
+                    <h2>Our Supplies</h2>
+                    <p>We have an amazing offering of specialized construction materials for sale.
+                        All of our products are of the highest quality and adhere to the strictest industry norms which conforms to IS grade and also other standards globally.
+                        View our full catalogue in order to know all of our products, as well as our additional services.</p>
+                    <p>We can also ship our products all around India and work with several strategic partners and distributors in order to make each order as smooth as possible.
+                        If you have any questions about our products and services, please get in touch today.</p>
+
+                    <Link to="/Products">View All Products</Link>
                 </div>
             </div>
 
+
             <div className="container my-4">
                 <h2 className="mb-4 text-center">Top Quality Brands</h2>
+                <div className="text-center py-4 ms-5 me-5">
+                    <p>Performance, Guaranteed</p>
+                    <p>TIRUPATI IRON has been working with the same brands since 1997.
+                        Our business was founded on the idea of providing quality construction materials and supplies to people and businesses that need it.
+                        We chose the best and most reputable brands since the start, and we have never looked back.
+                        Our reputation depends on offering only the best.</p>
+                </div>
                 <div className="brands-container">
                     <motion.div
                         className="brands-wrapper"
@@ -81,28 +72,24 @@ function Home() {
                 </div>
             </div>
 
-            <div className="container my-4">
-                <h2 className="mb-4 text-center">Certifications</h2>
-                <div className="brands-container">
+            <div className=" py-4  bg-warning bg-gradient">
+                <h2 className="mb-4 text-center">Our Certifications</h2>
+                <div className="certificate-container">
                     <motion.div
-                        className="brands-wrapper"
-                        animate={{ x: ["0%", "50%", "0%", "-50%", "0%"] }}
-                        transition={{
-                            duration: 30,
-                            repeat: Infinity,
-                            ease: "linear"
-                        }}
-                        layout
+                        className="certificate-wrapper"
+                        ref={ref}
+                        initial={{ opacity: 0, y: 100 }}
+                        animate={inView ? { opacity: 1, y: 0 } : {}}
+                        transition={{ duration: 0.8, type: 'spring', stiffness: 50 }}
                     >
                         {brands.map((brand, index) => (
-                            <div className="brand" key={index}>
-                                <img src={brand} alt={`Brand ${index + 1}`} className="brand-img" />
+                            <div className="certificate" key={index}>
+                                <img src={brand} alt={`Brand ${index + 1}`} className="certificate-img" />
                             </div>
                         ))}
                     </motion.div>
                 </div>
             </div>
-
 
             <Footer />
         </>

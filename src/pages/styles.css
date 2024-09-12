@@ -36,17 +36,64 @@
 }
 
 .brands-wrapper {
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-  width: max-content;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns */
+  gap: 20px; /* Adds space between each brand */
+  justify-items: center; /* Centers the brands horizontally in their grid cells */
+  align-items: center; /* Centers the brands vertically in their grid cells */
 }
 
 .brand {
-  margin: 0 20px; /* Adjust spacing between brands as needed */
+  margin: 0 auto; /* Ensure the brand is centered in its column */
 }
 
 .brand-img {
-  max-width: 150px; /* Adjust size as needed */
+  max-width: 150px; /* Keeps the brand image size consistent */
   height: auto;
+  transition: transform 0.3s ease; /* Optional: Adds hover effect */
+}
+
+.brand-img:hover {
+  transform: scale(1.1); /* Slightly enlarges the brand image on hover */
+}
+
+.certificate-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.certificate-wrapper {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* 4 certificates in a row for larger devices */
+  gap: 20px; /* Adds space between each certificate */
+  justify-items: center; /* Centers the certificates horizontally in their grid cells */
+  align-items: center; /* Centers the certificates vertically in their grid cells */
+}
+
+.certificate {
+  margin: 0 auto; /* Ensure the certificate is centered in its column */
+}
+
+.certificate-img {
+  max-width: 150px; /* Keeps the certificate image size consistent */
+  height: auto;
+  transition: transform 0.3s ease; /* Optional: Adds hover effect */
+}
+
+.certificate-img:hover {
+  transform: scale(1.1); /* Slightly enlarges the certificate image on hover */
+}
+
+/* Media query for small devices */
+@media (max-width: 768px) {
+  .certificate-wrapper {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 certificates per row for smaller devices */
+  }
 }

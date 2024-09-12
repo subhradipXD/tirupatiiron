@@ -3,8 +3,12 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/Logo.jpg"
 import Footer from "../include/Footer";
 import "./styles.css";
+import { useInView } from "react-intersection-observer";
+import { motion } from 'framer-motion';
 
 function Products() {
+    const { ref, inView } = useInView();
+
     const productCategories = [
         { id: 1, name: 'Flat Products', description: 'Description for Category 1', image: Logo },
         { id: 2, name: 'Long Product', description: 'Description for Category 2', image: Logo },
@@ -22,7 +26,12 @@ function Products() {
             <Navbar />
             <div className="container my-4">
                 <h2 className="mb-4 text-center">Our Products</h2>
-                <div className="row">
+                <motion.div
+                    ref={ref}
+                    initial={{ opacity: 0, y: 100 }}
+                    animate={inView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.8, type: 'spring', stiffness: 50 }}
+                    className="row">
                     {productCategories.map((category) => (
                         <div className="col-md-4 mb-4" key={category.id}>
                             <div className="card h-100 card-hover">  {/* Add card-hover class */}
@@ -37,7 +46,7 @@ function Products() {
                             </div>
                         </div>
                     ))}
-                </div>
+                </motion.div>
             </div>
 
             <Footer />
