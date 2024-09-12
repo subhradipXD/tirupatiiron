@@ -1,4 +1,6 @@
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaEnvelope } from 'react-icons/fa';
+// import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { MdOutlineAlternateEmail } from "react-icons/md";
+
 import { IoMdCall } from 'react-icons/io';
 import './footer.css';
 
@@ -22,10 +24,18 @@ function Footer() {
                     <div className="col-md-6 mb-3">
                         <h5>Contact Us</h5>
                         <ul className="list-unstyled">
-                            <li><IoMdCall className="me-2" /> +91 9876543210</li>
-                            <li><FaEnvelope className="me-2" /> contact@tirupatiiron.com</li>
+                            <li><IoMdCall className="me-2" /> +91 9434035673</li>
+                            <li className="mb-3">
+                                <MdOutlineAlternateEmail className="me-2" />
+                                <a
+                                    href="mailto:contact@tirupatiiron.com"
+                                    className="text-decoration-none"
+                                >
+                                    contact@tirupatiiron.com
+                                </a>
+                            </li>
                         </ul>
-                        <h5 className="mt-3">Follow Us</h5>
+                        {/* <h5 className="mt-3">Follow Us</h5>
                         <div>
                             <a href="https://facebook.com" className="me-2" target="_blank" rel="noopener noreferrer">
                                 <FaFacebookF />
@@ -39,7 +49,7 @@ function Footer() {
                             <a href="https://linkedin.com" className="" target="_blank" rel="noopener noreferrer">
                                 <FaLinkedinIn />
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

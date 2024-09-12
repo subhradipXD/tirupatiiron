@@ -55,9 +55,9 @@ function Home() {
                 <div className="brands-container">
                     <motion.div
                         className="brands-wrapper"
-                        animate={{ x: ["0%", "50%", "0%", "-50%", "0%"] }}
+                        animate={{ x: ["0%", "50%", "-50%", "0%"] }}
                         transition={{
-                            duration: 20,
+                            duration: 10,
                             repeat: Infinity,
                             ease: "linear"
                         }}

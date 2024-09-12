@@ -26,15 +26,14 @@ function App() {
           <Route path='/ContactUs' element={<ContactUs />} />
           {/* All Products */}
           <Route path='/Products/1' element={<ProductsOne />} />
-          <Route path='/Products/3' element={<ProductsTwo />} />
-          <Route path='/Products/4' element={<ProductsThree />} />
-          <Route path='/Products/5' element={<ProductsFour />} />
-          <Route path='/Products/6' element={<ProductsFive />} />
-          <Route path='/Products/7' element={<ProductsSix />} />
-          <Route path='/Products/8' element={<ProductsSeven />} />
-          <Route path='/Products/9' element={<ProductsEight />} />
-          <Route path='/Products/2' element={<ProductsNine />} />
-
+          <Route path='/Products/2' element={<ProductsTwo />} />
+          <Route path='/Products/3' element={<ProductsThree />} />
+          <Route path='/Products/4' element={<ProductsFour />} />
+          <Route path='/Products/5' element={<ProductsFive />} />
+          <Route path='/Products/6' element={<ProductsSix />} />
+          <Route path='/Products/7' element={<ProductsSeven />} />
+          <Route path='/Products/8' element={<ProductsEight />} />
+          <Route path='/Products/9' element={<ProductsNine />} />
         </Routes>
       </Router>
     </>
