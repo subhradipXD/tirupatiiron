@@ -1,5 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../assets/Logo.jpg";
+import './navbar.css';
+
 
 function Navbar() {
     const location = useLocation(); // Get the current location for active link
@@ -30,7 +32,7 @@ function Navbar() {
                                     Home
                                 </Link>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <Link
                                     className={`nav-link ${location.pathname === '/Products' ? 'active' : ''}`}
                                     aria-current={location.pathname === '/Products' ? 'page' : undefined}
@@ -38,7 +40,64 @@ function Navbar() {
                                 >
                                     Products
                                 </Link>
+                            </li> */}
+
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Products
+                                </a>
+                                <ul className="dropdown-menu">
+                                    <li className="nav-item dropend">
+                                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Mild Steel (MS)
+                                        </a>
+                                        <ul className="dropdown-menu">
+                                            <li><Link className="dropdown-item" to="/">MS Plate / Sheets</Link></li>
+                                            <li><Link className="dropdown-item" to="/">MS Angle</Link></li>
+                                            <li><Link className="dropdown-item" to="/">MS Channel</Link></li>
+                                            <li><Link className="dropdown-item" to="/">MS Beam</Link></li>
+                                            <li><Link className="dropdown-item" to="/">MS Round</Link></li>
+                                            <li><Link className="dropdown-item" to="/">MS Square Bar</Link></li>
+                                            <li><Link className="dropdown-item" to="/">MS Flat Bar</Link></li>
+                                        </ul>
+                                    </li>
+                                    <li className="nav-item dropend">
+                                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Galvanized Steel(GS)
+                                        </a>
+                                        <ul className="dropdown-menu">
+                                            <li><Link className="dropdown-item" to="/">GI Plate / Sheets</Link></li>
+                                            <li><Link className="dropdown-item" to="/">GI Angle</Link></li>
+                                            <li><Link className="dropdown-item" to="/">GI Channel</Link></li>
+                                            <li><Link className="dropdown-item" to="/">GI Beam</Link></li>
+                                            <li><Link className="dropdown-item" to="/">GI Round</Link></li>
+                                            <li><Link className="dropdown-item" to="/">GI Square Bar</Link></li>
+                                            <li><Link className="dropdown-item" to="/">GI Flat Bar</Link></li>
+                                        </ul>
+                                    </li>
+                                    <li className="nav-item dropend">
+                                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Stainless Steel (SS)
+                                        </a>
+                                        <ul className="dropdown-menu">
+                                            <li><Link className="dropdown-item" to="/">SS Plate / Sheets</Link></li>
+                                            <li><Link className="dropdown-item" to="/">SS Angle</Link></li>
+                                            <li><Link className="dropdown-item" to="/">SS Channel</Link></li>
+                                            <li><Link className="dropdown-item" to="/">SS Beam</Link></li>
+                                            <li><Link className="dropdown-item" to="/">SS Round</Link></li>
+                                            <li><Link className="dropdown-item" to="/">SS Square Bar</Link></li>
+                                            <li><Link className="dropdown-item" to="/">SS Flat Bar</Link></li>
+                                        </ul>
+                                    </li>
+                                    <li><Link className="dropdown-item" to="/">Rail</Link></li>
+                                    <li><Link className="dropdown-item" to="/">Pipe And Hollow Section</Link></li>
+                                    <li><Link className="dropdown-item" to="/">Corrugated Roofing Sheets</Link></li>
+                                    <li><Link className="dropdown-item" to="/">Cement</Link></li>
+                                    <li><Link className="dropdown-item" to="/">Godrej Safes</Link></li>
+                                    <li><Link className="dropdown-item" to="/">Hardware</Link></li>
+                                </ul>
                             </li>
+
                             <li className="nav-item">
                                 <Link
                                     className={`nav-link ${location.pathname === '/AboutUs' ? 'active' : ''}`}

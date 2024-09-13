@@ -10,7 +10,7 @@ function ProductsFour() {
     const categories = [
         {
             id: 1,
-            name: "SI",
+            name: "GI",
             description: "SI pipe and hollow sections for construction.",
             image: logo,
             subCategories: [
