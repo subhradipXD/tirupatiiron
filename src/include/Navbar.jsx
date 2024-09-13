@@ -63,10 +63,10 @@ function Navbar() {
                                     </li>
                                     <li className="nav-item dropend">
                                         <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Galvanized Steel(GS)
+                                            Galvanized Iron(GI)
                                         </a>
                                         <ul className="dropdown-menu">
-                                            <li><Link className="dropdown-item" to="/">GI Plate / Sheets</Link></li>
+                                            <li><Link className="dropdown-item" to="/">GI Sheets</Link></li>
                                             <li><Link className="dropdown-item" to="/">GI Angle</Link></li>
                                             <li><Link className="dropdown-item" to="/">GI Channel</Link></li>
                                             <li><Link className="dropdown-item" to="/">GI Beam</Link></li>
@@ -89,9 +89,29 @@ function Navbar() {
                                             <li><Link className="dropdown-item" to="/">SS Flat Bar</Link></li>
                                         </ul>
                                     </li>
+                                    <li className="nav-item dropend">
+                                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Pipe And Hollow Section
+                                        </a>
+                                        <ul className="dropdown-menu">
+                                            <li><Link className="dropdown-item" to="/">GI</Link></li>
+                                            <li><Link className="dropdown-item" to="/">MS</Link></li>
+                                            <li><Link className="dropdown-item" to="/">SS</Link></li>
+                                            <li><Link className="dropdown-item" to="/">Seamless</Link></li>
+                                        </ul>
+                                    </li><li className="nav-item dropend">
+                                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Corrugated Roofing Sheets
+                                        </a>
+                                        <ul className="dropdown-menu">
+                                            <li><Link className="dropdown-item" to="/">Color Coated</Link></li>
+                                            <li><Link className="dropdown-item" to="/">GI</Link></li>
+                                            <li><Link className="dropdown-item" to="/">Poly Carbonate</Link></li>
+                                            <li><Link className="dropdown-item" to="/">FRP</Link></li>
+                                            <li><Link className="dropdown-item" to="/">Aluminum</Link></li>
+                                        </ul>
+                                    </li>
                                     <li><Link className="dropdown-item" to="/">Rail</Link></li>
-                                    <li><Link className="dropdown-item" to="/">Pipe And Hollow Section</Link></li>
-                                    <li><Link className="dropdown-item" to="/">Corrugated Roofing Sheets</Link></li>
                                     <li><Link className="dropdown-item" to="/">Cement</Link></li>
                                     <li><Link className="dropdown-item" to="/">Godrej Safes</Link></li>
                                     <li><Link className="dropdown-item" to="/">Hardware</Link></li>
