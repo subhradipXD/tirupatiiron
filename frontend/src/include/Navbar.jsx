@@ -4,7 +4,7 @@ import './navbar.css';
 
 
 function Navbar() {
-    const location = useLocation(); // Get the current location for active link
+    const location = useLocation();
 
     return (
         <>
@@ -14,7 +14,20 @@ function Navbar() {
                     <div className="fs-1">TIRUPATI IRON</div>
                     <div>COMMERCIAL PRIVATE LIMITED</div>
                 </div>
+
+                <div className="ms-auto d-none d-lg-block me-5 pe-5">
+                    <div className="text-end">
+                        <div><strong>Phone:</strong> +91 9434035673</div>
+                        <div><strong>Email: </strong><a
+                            href="mailto:contact@tirupatiiron.com"
+                            className="text-decoration-none"
+                        >
+                            contact@tirupatiiron.com
+                        </a></div>
+                    </div>
+                </div>
             </div>
+
 
             <nav className="navbar navbar-expand-lg bg-body-tertiary ps-4 sticky-top">
                 <div className="container-fluid">
