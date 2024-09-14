@@ -32,15 +32,6 @@ function Navbar() {
                                     Home
                                 </Link>
                             </li>
-                            {/* <li className="nav-item">
-                                <Link
-                                    className={`nav-link ${location.pathname === '/Products' ? 'active' : ''}`}
-                                    aria-current={location.pathname === '/Products' ? 'page' : undefined}
-                                    to="/Products"
-                                >
-                                    Products
-                                </Link>
-                            </li> */}
 
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
