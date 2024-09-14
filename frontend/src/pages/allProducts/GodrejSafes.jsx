@@ -1,14 +1,15 @@
 import Navbar from "../../include/Navbar";
 
-function ProductsSix() {
+function GodrejSafes() {
     return (
         <>
             <Navbar />
-            <div>
-                Prod 6
+            <div className="container">
+
             </div>
+
         </>
     );
 }
 
-export default ProductsSix;
+export default GodrejSafes;

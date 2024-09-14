@@ -1,14 +1,14 @@
 import Navbar from "../../include/Navbar";
 
-function ProductsEight() {
+function Rail() {
     return (
         <>
             <Navbar />
-            <div>
-                Prod 8
+            <div className="container">
+
             </div>
         </>
     );
 }
 
-export default ProductsEight;
+export default Rail;

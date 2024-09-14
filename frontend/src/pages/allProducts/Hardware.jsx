@@ -1,14 +1,14 @@
 import Navbar from "../../include/Navbar";
 
-function ProductsNine() {
+function Hardware() {
     return (
         <>
             <Navbar />
-            <div>
-                Prod 9
+            <div className="container">
+
             </div>
         </>
     );
 }
 
-export default ProductsNine;
+export default Hardware;
