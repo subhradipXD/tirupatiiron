@@ -47,15 +47,15 @@ function Navbar() {
                             </li>
 
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Products
                                 </a>
-                                <ul className="dropdown-menu">
+                                <ul className="dropdown-menu mt-0 pt-0">
                                     <li className="nav-item dropend">
-                                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Mild Steel (MS)
                                         </a>
-                                        <ul className="dropdown-menu">
+                                        <ul className="dropdown-menu ms-0 ps-0">
                                             <li><Link className="dropdown-item" to="/Products/Mild-Steel/Plate-Sheets">MS Plate / Sheets</Link></li>
                                             <li><Link className="dropdown-item" to="/Products/Mild-Steel/Angle">MS Angle</Link></li>
                                             <li><Link className="dropdown-item" to="/Products/Mild-Steel/Channel">MS Channel</Link></li>
@@ -69,7 +69,7 @@ function Navbar() {
                                         <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Galvanized Iron(GI)
                                         </a>
-                                        <ul className="dropdown-menu">
+                                        <ul className="dropdown-menu ms-0 ps-0">
                                             <li><Link className="dropdown-item" to="/Products/Galvanized-Steel/Sheets">GI Sheets</Link></li>
                                             <li><Link className="dropdown-item" to="/Products/Galvanized-Steel/Angle">GI Angle</Link></li>
                                             <li><Link className="dropdown-item" to="/Products/Galvanized-Steel/Channel">GI Channel</Link></li>
@@ -83,7 +83,7 @@ function Navbar() {
                                         <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Stainless Steel (SS)
                                         </a>
-                                        <ul className="dropdown-menu">
+                                        <ul className="dropdown-menu ms-0 ps-0">
                                             <li><Link className="dropdown-item" to="/Products/Stainless-Steel/Plate-Sheets">SS Plate / Sheets</Link></li>
                                             <li><Link className="dropdown-item" to="/Products/Stainless-Steel/Angle">SS Angle</Link></li>
                                             <li><Link className="dropdown-item" to="/Products/Stainless-Steel/Channel">SS Channel</Link></li>
@@ -97,7 +97,7 @@ function Navbar() {
                                         <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Pipe And Hollow Section
                                         </a>
-                                        <ul className="dropdown-menu">
+                                        <ul className="dropdown-menu ms-0 ps-0">
                                             <li><Link className="dropdown-item" to="/Products/Pipe-Hollow/GI-Pipe">GI</Link></li>
                                             <li><Link className="dropdown-item" to="/Products/Pipe-Hollow/MS-Pipe">MS</Link></li>
                                             <li><Link className="dropdown-item" to="/Products/Pipe-Hollow/SS-Pipe">SS</Link></li>
@@ -107,7 +107,7 @@ function Navbar() {
                                         <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Corrugated Roofing Sheets
                                         </a>
-                                        <ul className="dropdown-menu">
+                                        <ul className="dropdown-menu ms-0 ps-0">
                                             <li><Link className="dropdown-item" to="/Products/Corrugated-Roofing-Sheets/ColorCoated">Color Coated</Link></li>
                                             <li><Link className="dropdown-item" to="/Products/Corrugated-Roofing-Sheets/GI-RoofingSheets">GI</Link></li>
                                             <li><Link className="dropdown-item" to="/Products/Corrugated-Roofing-Sheets/PolyCarbonate">Poly Carbonate</Link></li>

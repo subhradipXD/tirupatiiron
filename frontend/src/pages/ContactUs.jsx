@@ -59,21 +59,31 @@ function ContactUs() {
     return (
         <>
             <Navbar />
+
             <div className="container my-4">
                 <div className="row">
                     {/* Left side - Google Map */}
                     <div className="col-md-6">
                         <h3>Our Location</h3>
-                        <div className="map-container mb-4" style={{ height: '400px' }}>
-                            <iframe
-                                title="Google Map"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4302.465252973626!2d88.13835742589531!3d22.082094239051088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02f7b29ac833dd%3A0x1bd3f1891ce48d2a!2sTirupati%20Iron!5e0!3m2!1sen!2sin!4v1726057191936!5m2!1sen!2sin"
-                                width="100%"
-                                height="100%"
-                                style={{ border: 0 }}
-                                allowFullScreen=""
-                                loading="lazy"
-                            ></iframe>
+                        <div className="row">
+                            <div className="map-container mb-4" style={{ height: '400px' }}>
+                                <iframe
+                                    title="Google Map"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4302.465252973626!2d88.13835742589531!3d22.082094239051088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02f7b29ac833dd%3A0x1bd3f1891ce48d2a!2sTirupati%20Iron!5e0!3m2!1sen!2sin!4v1726057191936!5m2!1sen!2sin"
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: 0 }}
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                ></iframe>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <h4 className="pt-5">Shop Hours</h4>
+                            <p>We are open from <strong>8:00 AM to 8:00 PM</strong>, Monday to Saturday.</p>
+                            <p><strong>Closed on Sundays.</strong></p>
+                        </div>  <div className="row">
+
                         </div>
                     </div>
 
