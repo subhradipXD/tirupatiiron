@@ -7,6 +7,10 @@ import { MdOutlinePhone } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import axios from "axios"; // To handle API requests
 import './styles.css';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 function ContactUs() {
     const [formData, setFormData] = useState({
@@ -29,6 +33,7 @@ function ContactUs() {
         // Validate form data
         if (!formData.name || !formData.email || !formData.phone || !formData.feedback) {
             setError("Please fill in all required fields.");
+            toast.error("Please fill in all required fields."); // Toast for error
             return;
         }
 
@@ -37,7 +42,7 @@ function ContactUs() {
 
         try {
             // Send data to the backend API (which will handle sending the email)
-            await axios.post("/api/sendEmail", formData);
+            await axios.post("http://localhost:5000/api/sendEmail", formData);
 
             // Reset the form
             setFormData({
@@ -48,18 +53,22 @@ function ContactUs() {
                 feedback: ""
             });
 
-            // Show thank you modal
-            setShowModal(true);
+            // Show success toast
+            toast.success("Feedback submitted successfully!");
+
         } catch (error) {
             console.error("Error sending feedback:", error);
-            setError("There was an error sending your feedback. Please try again later.");
+            toast.error("There was an error sending your feedback. Please try again later.");
         }
     };
+
 
     return (
         <>
             <Navbar />
-
+            <div className="container my-4">
+                <ToastContainer />
+            </div>
             <div className="container my-4">
                 <div className="row">
                     {/* Left side - Google Map */}
