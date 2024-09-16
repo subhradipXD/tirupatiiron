@@ -18,7 +18,7 @@ function Cement() {
 
                 <div className="row mt-5">
                     <div className="col-md-4">
-                        <div className="card text-center mb-3 card-hover" data-bs-toggle="modal" data-bs-target="#cardModal1" style={{ width: '18rem' }}>
+                        <div className="card text-center mb-3 card-hover" data-bs-toggle="modal" data-bs-target="#cardModal1" >
                             <div className="card-body">
                                 <h5 className="card-title">Special title treatment</h5>
                                 <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -28,7 +28,7 @@ function Cement() {
                     </div>
 
                     <div className="col-md-4">
-                        <div className="card text-center mb-3 card-hover" data-bs-toggle="modal" data-bs-target="#cardModal2" style={{ width: '18rem' }}>
+                        <div className="card text-center mb-3 card-hover" data-bs-toggle="modal" data-bs-target="#cardModal2" >
                             <div className="card-body">
                                 <h5 className="card-title">Special title treatment</h5>
                                 <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -38,7 +38,7 @@ function Cement() {
                     </div>
 
                     <div className="col-md-4">
-                        <div className="card text-center mb-3 card-hover" data-bs-toggle="modal" data-bs-target="#cardModal3" style={{ width: '18rem' }}>
+                        <div className="card text-center mb-3 card-hover" data-bs-toggle="modal" data-bs-target="#cardModal3">
                             <div className="card-body">
                                 <h5 className="card-title">Special title treatment</h5>
                                 <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>

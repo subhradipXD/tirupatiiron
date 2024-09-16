@@ -25,9 +25,27 @@ function Home() {
     return (
         <>
             <Navbar />
-            <div className="image-container">
-                <img src={Shop} alt="Shop" className="img-fluid shop-image" />
+            <div className="container">
+                <div className="image-container">
+                    <img src={Shop} alt="Shop" className="img-fluid shop-image rounded" />
+                    <div className="overlay">
+                        <span className="overlay-text">
+                            <h2>
+                                Your Own Trusted Steel Distributer
+                            </h2>
+                            <Link to='/ContactUs'>
+                                <h3 className="text-center">
+                                    Please Visit Us
+                                </h3>
+                            </Link>
+
+                        </span>
+                    </div>
+                </div>
             </div>
+
+
+
 
             <div className="bg-warning bg-gradient">
                 <div className="text-center py-4 ms-5 me-5 bg-warning bg-gradient">
