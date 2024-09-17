@@ -96,17 +96,28 @@ function products() {
                     </div>
 
                     <div className="col-md-4">
-                        <div className="card text-center mb-3 card-hover"  >
+                        <div className="card text-center mb-3 card-hover" data-bs-toggle="modal" data-bs-target="#cardModal6"  >
                             <div className="card-body">
                                 <h5 className="card-title">Hardware</h5>
                                 <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <Link to="/Products/Hardware" className="btn btn-primary">Go somewhere</Link>
+                                <a href="#" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cardModal6">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* row */}
+                <div className="row mt-3">
+                    <div className="col-md-4">
+                        <div className="card text-center mb-3 card-hover"  >
+                            <div className="card-body">
+                                <h5 className="card-title">Building Product Solution</h5>
+                                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <Link to="/Products/BuildingProductSolutions" className="btn btn-primary">Go somewhere</Link>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
 
             {/* modal */}
             <div className="modal fade" id="cardModal1" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -205,9 +216,27 @@ function products() {
                             <ul className="list-group list-group-flush text-center">
                                 <Link className="list-group-item" to="/Products/Corrugated-Roofing-Sheets/ColorCoated">Color Coated</Link>
                                 <Link className="list-group-item" to="/Products/Corrugated-Roofing-Sheets/GI-RoofingSheets">GI</Link>
-                                <Link className="list-group-item" to="/Products/Corrugated-Roofing-Sheets/PolyCarbonate">Poly Carbonate</Link>
-                                <Link className="list-group-item" to="/Products/Corrugated-Roofing-Sheets/FRP">FRP</Link>
-                                <Link className="list-group-item" to="/Products/Corrugated-Roofing-Sheets/Aluminum">Aluminum</Link>
+                                <Link className="list-group-item" to="/Products/Corrugated-Roofing-Sheets/AluminumPolyFRP">Aluminum & Poly Carbonate & FRP</Link>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="modal fade" id="cardModal6" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-sm">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="exampleModalLabel">Hardware</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body">
+                            <ul className="list-group list-group-flush text-center">
+                                <Link className="list-group-item" to="/Products/Hardware/TataAgriAndConstruction">Tata Agri and Construction Tools</Link>
+                                <Link className="list-group-item" to="/Products/Hardware/TataHandTools">Tata Hand Tools</Link>
+                                <Link className="list-group-item" to="/Products/Hardware/TataConsumables">Tata Consumables</Link>
+                                <Link className="list-group-item" to="/Products/Hardware/TataGardenTools">Tata Garden Tools</Link>
+                                <Link className="list-group-item" to="/Products/Hardware/TataWeldingElectrodes">Tata Welding Electrodes</Link>
                             </ul>
                         </div>
                     </div>

@@ -28,8 +28,7 @@ function Navbar() {
                 </div>
             </div>
 
-
-            <nav className="navbar navbar-expand-lg bg-body-tertiary ps-4 sticky-top">
+            <nav className="navbar navbar-expand-lg bg-body-tertiary ps-4 sticky-top z-10">
                 <div className="container-fluid">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" />
@@ -103,22 +102,35 @@ function Navbar() {
                                             <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Pipe-Hollow/SS-Pipe">SS</Link></li>
                                             <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Pipe-Hollow/Seamless-Pipe">Seamless</Link></li>
                                         </ul>
-                                    </li><li className="nav-item dropend">
+                                    </li>
+                                    <li className="nav-item dropend">
                                         <a className="nav-link dropdown-toggle ms-3 ms-sm-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Corrugated Roofing Sheets
                                         </a>
                                         <ul className="dropdown-menu ms-0 ps-0">
                                             <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Corrugated-Roofing-Sheets/ColorCoated">Color Coated</Link></li>
                                             <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Corrugated-Roofing-Sheets/GI-RoofingSheets">GI</Link></li>
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Corrugated-Roofing-Sheets/PolyCarbonate">Poly Carbonate</Link></li>
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Corrugated-Roofing-Sheets/FRP">FRP</Link></li>
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Corrugated-Roofing-Sheets/Aluminum">Aluminum</Link></li>
+                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Corrugated-Roofing-Sheets/AluminumPolyFRP">Aluminum & Poly Carbonate & FRP</Link></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><Link className="dropdown-item" to="/Products/Cement">Cement</Link></li>
+
+                                    <li className="nav-item dropend">
+                                        <a className="nav-link dropdown-toggle ms-3 ms-sm-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Hardware
+                                        </a>
+                                        <ul className="dropdown-menu ms-0 ps-0">
+                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Hardware/TataAgriAndConstruction">Tata Agri & Construction Tools</Link></li>
+                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Hardware/TataHandTools">Tata Hand Tools</Link></li>
+                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Hardware/TataConsumables">Tata Consumables</Link></li>
+                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Hardware/TataGardenTools">Tata Garden Tools</Link></li>
+                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Hardware/TataWeldingElectrodes">Tata Welding Electrodes</Link></li>
                                         </ul>
                                     </li>
                                     <li><Link className="dropdown-item" to="/Products/Rail">Rail</Link></li>
-                                    <li><Link className="dropdown-item" to="/Products/Cement">Cement</Link></li>
                                     <li><Link className="dropdown-item" to="/Products/GodrejSafes">Godrej Safes</Link></li>
-                                    <li><Link className="dropdown-item" to="/Products/Hardware">Hardware</Link></li>
+                                    <li><Link className="dropdown-item" to="/Products/BuildingProductSolutions">Building Product Solution</Link></li>
                                 </ul>
                             </li>
 

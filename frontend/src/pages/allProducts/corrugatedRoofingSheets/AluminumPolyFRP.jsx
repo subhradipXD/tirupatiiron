@@ -1,7 +1,7 @@
-import Navbar from "../../include/Navbar";
-import logo from '../../assets/Logo.jpg';
+import Navbar from "../../../include/Navbar";
+import logo from "../../../assets/Logo.jpg";
 
-function Cement() {
+function AluminumPolyFRP() {
     return (
         <>
             <Navbar />
@@ -17,27 +17,35 @@ function Cement() {
                 </div>
 
                 <div className="row mt-5">
-                    <div className="col-md-6">
+                    <div className="col-md-4">
                         <div className="card text-center mb-3 card-hover" data-bs-toggle="modal" data-bs-target="#cardModal1" >
                             <div className="card-body">
-                                <h5 className="card-title">Special title treatment</h5>
+                                <h5 className="card-title">Aluminum</h5>
                                 <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 <a href="#" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cardModal1">Go somewhere</a>
                             </div>
                         </div>
                     </div>
 
-                    <div className="col-md-6">
+                    <div className="col-md-4">
                         <div className="card text-center mb-3 card-hover" data-bs-toggle="modal" data-bs-target="#cardModal2" >
                             <div className="card-body">
-                                <h5 className="card-title">Special title treatment</h5>
+                                <h5 className="card-title">Poly Carbonate</h5>
                                 <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 <a href="#" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cardModal2">Go somewhere</a>
                             </div>
                         </div>
                     </div>
 
-
+                    <div className="col-md-4">
+                        <div className="card text-center mb-3 card-hover" data-bs-toggle="modal" data-bs-target="#cardModal3">
+                            <div className="card-body">
+                                <h5 className="card-title">Fibre-Reinforced Plastic (FRP)</h5>
+                                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cardModal3">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -47,11 +55,11 @@ function Cement() {
                 <div className="modal-dialog modal-lg">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">Card 1 Modal</h5>
+                            <h5 className="modal-title" id="exampleModalLabel">Aluminum</h5>
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
-                            Content for card 1 modal...
+                            Aluminum
                         </div>
                     </div>
                 </div>
@@ -61,19 +69,31 @@ function Cement() {
                 <div className="modal-dialog modal-lg">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">Card 2 Modal</h5>
+                            <h5 className="modal-title" id="exampleModalLabel">Poly Carbonate</h5>
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
-                            Content for card 2 modal...
+                            Poly Carbonate
                         </div>
                     </div>
                 </div>
             </div>
 
-
+            <div className="modal fade" id="cardModal3" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-lg">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="exampleModalLabel">Fibre-Reinforced Plastic (FRP)</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body">
+                            Fibre-Reinforced Plastic (FRP)
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     );
 }
 
-export default Cement;
+export default AluminumPolyFRP;

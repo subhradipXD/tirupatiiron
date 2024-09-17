@@ -1,6 +1,6 @@
 import Navbar from "../../../include/Navbar";
 import logo from "../../../assets/Logo.jpg";
-function SSPipe() {
+function TataWeldingElectrodes() {
     return (
         <>
             <Navbar />
@@ -58,8 +58,9 @@ function SSPipe() {
                         </div>
                     </div>
                 </div>
-            </div>        </>
+            </div>
+        </>
     );
 }
 
-export default SSPipe;
+export default TataWeldingElectrodes;

@@ -35,7 +35,6 @@ function AboutUs() {
                         <li>Ethical business practices</li>
                         <li>Genuine vendor base</li>
                         <li>Team of trained professionals</li>
-                        <li>Pocket-friendly prices</li>
                         <li>Flexible payment modes</li>
                     </ul>
                 </section>

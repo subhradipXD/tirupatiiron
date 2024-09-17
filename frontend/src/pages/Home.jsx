@@ -56,7 +56,7 @@ function Home() {
                     <p>We can also ship our products all around India and work with several strategic partners and distributors in order to make each order as smooth as possible.
                         If you have any questions about our products and services, please get in touch today.</p>
 
-                    <Link to="/Products">View All Products</Link>
+                    {/* <Link to="/Products">View All Products</Link> */}
                 </div>
             </div>
 
