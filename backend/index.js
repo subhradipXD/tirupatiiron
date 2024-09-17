@@ -2,6 +2,8 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+require('dotenv').config();
+
 
 const app = express();
 const port = 5000; // You can change the port if needed
@@ -25,7 +27,7 @@ app.post('/api/sendEmail', async (req, res) => {
         host: "smtp.gmail.com",
         auth: {
             user: 'subhradipdas6969@gmail.com', // Your email
-            pass: 'dmcu kwza cyjl xavl' // Your email password or app-specific password
+            pass: process.env.emailpassword, // Your email password or app-specific password
         }
     });
 
