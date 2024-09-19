@@ -1,8 +1,6 @@
-import Navbar from "../../../include/Navbar";
-import logo from '../../../assets/Logo.jpg';
-
-
-function MSBeam() {
+import Navbar from "../../include/Navbar";
+import logo from "../../assets/Logo.jpg";
+function ReBar() {
     return (
         <>
             <Navbar />
@@ -19,6 +17,8 @@ function MSBeam() {
                     </div>
                 </div>
 
+
+
                 <div className="row mt-5">
                     <div className="col-md-6">
                         <h3>lorem ipsum</h3>
@@ -26,73 +26,69 @@ function MSBeam() {
                             <thead>
                                 <tr>
                                     <th scope="col">Sl. No.</th>
-                                    <th scope="col">Size</th>
-                                    <th scope="col">Weight(Kg/m)</th>
+                                    <th scope="col">Diameter (mm)</th>
+                                    <th scope="col">Weight (Kg/m)</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>MB 100 × 50</td>
-                                    <td>8.95</td>
+                                    <td>8</td>
+                                    <td>0.395</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
-                                    <td>MB 150 × 75</td>
-                                    <td>14.96</td>
+                                    <td>10</td>
+                                    <td>0.617</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">3</th>
-                                    <td>MB 200 × 100</td>
-                                    <td>24.17</td>
+                                    <td>12</td>
+                                    <td>0.888</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">4</th>
-                                    <td>MB 250 × 125</td>
-                                    <td>37.30</td>
+                                    <td>16</td>
+                                    <td>1.58</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">5</th>
-                                    <td>MB 300 × 140</td>
-                                    <td>46.02</td>
+                                    <td>20</td>
+                                    <td>2.47</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">6</th>
-                                    <td>MB 350 × 140</td>
-                                    <td>Thornton</td>
+                                    <td>22</td>
+                                    <td>2.98</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">7</th>
-                                    <td>MB 400 × 140</td>
-                                    <td>Otto</td>
+                                    <td>25</td>
+                                    <td>3.85</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">8</th>
-                                    <td>MB 450 × 150</td>
-                                    <td>Thornton</td>
+                                    <td>28</td>
+                                    <td>4.83</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">9</th>
-                                    <td>MB 500 × 180</td>
-                                    <td>Otto</td>
+                                    <td>32</td>
+                                    <td>6.31</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">10</th>
-                                    <td>MB 650 × 190</td>
-                                    <td>Thornton</td>
+                                    <td>36</td>
+                                    <td>7.99</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">11</th>
-                                    <td>MB 600 × 210</td>
-                                    <td>Thornton</td>
+                                    <td>40</td>
+                                    <td>9.85</td>
                                 </tr>
-                                {/* <tr>
-                                    <th scope="row">3</th>
-                                    <td colSpan={2}>Larry the Bird</td>
-                                    <td>@twitter</td>
-                                </tr> */}
                             </tbody>
                         </table>
+
 
                     </div>
                     <div className="col-md-6">
@@ -104,7 +100,7 @@ function MSBeam() {
                         <div className="container mt-3">
                             <div className="card text-center mb-3 card-hover" data-bs-toggle="modal" data-bs-target="#cardModal1" >
                                 <div className="card-body">
-                                    <h5 className="card-title">NPB & WPB</h5>
+                                    <h5 className="card-title">NPB + WPB</h5>
                                     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                     <a href="#" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cardModal1">Go somewhere</a>
                                 </div>
@@ -118,13 +114,6 @@ function MSBeam() {
                                 </div>
                             </div>
 
-                            <div className="card text-center mb-3 card-hover" data-bs-toggle="modal" data-bs-target="#cardModal3" >
-                                <div className="card-body">
-                                    <h5 className="card-title">Universal Beam (UB)</h5>
-                                    <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cardModal3">Go somewhere</a>
-                                </div>
-                            </div>
                         </div>
 
                     </div>
@@ -164,21 +153,9 @@ function MSBeam() {
                 </div>
             </div>
 
-            <div className="modal fade" id="cardModal3" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div className="modal-dialog modal-lg">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">Card 3 Modal</h5>
-                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div className="modal-body">
-                            Content for card 3 modal...
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </>
     );
 }
 
-export default MSBeam;
+export default ReBar;

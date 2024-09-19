@@ -24,32 +24,67 @@ function MSFlatBar() {
                         <table className="table table-hover table-striped-columns">
                             <thead>
                                 <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
+                                    <th scope="col">Sl. No.</th>
+                                    <th scope="col">Size (mm)</th>
+                                    <th scope="col">Weight (Mtr)</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
+                                    <td>20 x 6</td>
+                                    <td>0.942</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
+                                    <td>25 x 3/5/6</td>
+                                    <td>0.589 / 1.081 / 1.177</td>
                                 </tr>
+
                                 <tr>
                                     <th scope="row">3</th>
-                                    <td colSpan={2}>Larry the Bird</td>
-                                    <td>@twitter</td>
+                                    <td>32 x 6</td>
+                                    <td>0.507</td>
                                 </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>40 x 5/6</td>
+                                    <td>1.57 / 1.884</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>50 x 5/6</td>
+                                    <td>1.962 / 2.355</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">10</th>
+                                    <td>65 x 6/8</td>
+                                    <td>3.06 / 4.08</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">12</th>
+                                    <td>75 x 6/8/10</td>
+                                    <td>3.532 / 4.71 / 5.887</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">15</th>
+                                    <td>100 x 6/8/10/12</td>
+                                    <td>4.71 / 6.28 / 7.85 / 9.42</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">19</th>
+                                    <td>150 x 6/10</td>
+                                    <td>7.065 / 11.775</td>
+                                </tr>
+
                             </tbody>
                         </table>
+
 
                     </div>
                     <div className="col-md-6">

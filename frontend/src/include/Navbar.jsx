@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import Logo from "../assets/Logo.jpg";
+import Logo from "../assets/Logo2.png";
 import './navbar.css';
 
 
@@ -9,7 +9,7 @@ function Navbar() {
     return (
         <>
             <div className="d-flex align-items-center ps-3 pt-3">
-                <img src={Logo} alt="Logo" style={{ width: '100px', height: '100px' }} />
+                <img src={Logo} alt="Logo" style={{ width: '70px', height: '70px' }} />
                 <div className="ms-3">
                     <div className="fs-1">TIRUPATI IRON</div>
                     <div>COMMERCIAL PRIVATE LIMITED</div>
@@ -28,7 +28,7 @@ function Navbar() {
                 </div>
             </div>
 
-            <nav className="navbar navbar-expand-lg bg-body-tertiary ps-4 sticky-top z-10">
+            <nav className="navbar navbar-expand-lg bg-body-tertiary ps-4 sticky-top z-10 mt-3">
                 <div className="container-fluid">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" />
@@ -50,12 +50,23 @@ function Navbar() {
                                     Products
                                 </a>
                                 <ul className="dropdown-menu mt-0 pt-0">
+                                    <li><Link className="dropdown-item" to="/Products/Re-Bar">Re-Bar</Link></li>
+
                                     <li className="nav-item dropend">
                                         <a className="nav-link dropdown-toggle ms-3 ms-sm-2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Mild Steel (MS)
                                         </a>
                                         <ul className="dropdown-menu ms-0 ps-0">
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Plate-Sheets">MS Plate / Sheets</Link></li>
+                                            <li className="nav-item dropend">
+                                                <a className="nav-link dropdown-toggle ms-3 ms-sm-2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    MS Plate & Sheets
+                                                </a>
+                                                <ul className="dropdown-menu ms-0 ps-0">
+                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Plate-Sheets/MS-Plate">MS Plate</Link></li>
+                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Plate-Sheets/MS-Sheets">MS Sheets</Link></li>
+                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Plate-Sheets/MS-Checkered-Sheets">MS Checkered Sheets</Link></li>
+                                                </ul>
+                                            </li>
                                             <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Angle">MS Angle</Link></li>
                                             <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Channel">MS Channel</Link></li>
                                             <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Beam">MS Beam</Link></li>

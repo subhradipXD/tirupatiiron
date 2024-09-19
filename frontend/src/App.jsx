@@ -16,7 +16,6 @@ import GIRound from './pages/allProducts/galvanizedSteel/GIRound';
 import GISquareBar from './pages/allProducts/galvanizedSteel/GISquareBar';
 import GIFlatBar from './pages/allProducts/galvanizedSteel/GIFlatBar';
 
-import MSPlateSheets from './pages/allProducts/mildSteel/MSPlateSheets';
 import MSAngle from './pages/allProducts/mildSteel/MSAngle';
 import MSChannel from './pages/allProducts/mildSteel/MSChannel';
 import MSBeam from './pages/allProducts/mildSteel/MSBeam';
@@ -46,6 +45,10 @@ import TataGardenTools from './pages/allProducts/hardware/TataGardenTools';
 import TataHandTools from './pages/allProducts/hardware/TataHandTools';
 import TataWeldingElectrodes from './pages/allProducts/hardware/TataWeldingElectrodes';
 import BuildingProductSolutions from './pages/allProducts/BuildingProductSolutions';
+import ReBar from './pages/allProducts/ReBar';
+import MSPlate from './pages/allProducts/mildSteel/msPlateAndSheets/MSPlate';
+import MSSheets from './pages/allProducts/mildSteel/msPlateAndSheets/MSSheets';
+import MSCheckeredSheets from './pages/allProducts/mildSteel/msPlateAndSheets/MSCheckeredSheets';
 
 
 
@@ -70,13 +73,17 @@ function App() {
           <Route path='/Products/Galvanized-Steel/Flat-Bar' element={<GIFlatBar />} />
 
           {/* MS Products */}
-          <Route path='/Products/Mild-Steel/Plate-Sheets' element={<MSPlateSheets />} />
           <Route path='/Products/Mild-Steel/Angle' element={<MSAngle />} />
           <Route path='/Products/Mild-Steel/Channel' element={<MSChannel />} />
           <Route path='/Products/Mild-Steel/Beam' element={<MSBeam />} />
           <Route path='/Products/Mild-Steel/Round' element={<MSRound />} />
           <Route path='/Products/Mild-Steel/Square-Bar' element={<MSSquareBar />} />
           <Route path='/Products/Mild-Steel/Flat-Bar' element={<MSFlatBar />} />
+
+          <Route path='/Products/Mild-Steel/Plate-Sheets/MS-Plate' element={<MSPlate />} />
+          <Route path='/Products/Mild-Steel/Plate-Sheets/MS-Sheets' element={<MSSheets />} />
+          <Route path='/Products/Mild-Steel/Plate-Sheets/MS-Checkered-Sheets' element={<MSCheckeredSheets />} />
+
 
           {/* SS Products */}
           <Route path='/Products/Stainless-Steel/Plate-Sheets' element={<SSPlateSheets />} />
@@ -110,8 +117,7 @@ function App() {
           <Route path='/Products/GodrejSafes' element={<GodrejSafes />} />
           <Route path='/Products/Rail' element={<Rail />} />
           <Route path='/Products/BuildingProductSolutions' element={<BuildingProductSolutions />} />
-
-
+          <Route path='/Products/Re-Bar' element={<ReBar />} />
 
         </Routes>
       </Router>

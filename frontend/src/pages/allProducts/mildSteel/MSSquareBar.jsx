@@ -24,32 +24,37 @@ function MSSquareBar() {
                         <table className="table table-hover table-striped-columns">
                             <thead>
                                 <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
+                                    <th scope="col">Sl. No.</th>
+                                    <th scope="col">Size (mm)</th>
+                                    <th scope="col">Weight (Kg/Mtr)</th>
                                 </tr>
                             </thead>
                             <tbody>
+
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
+                                    <td>10 x 10</td>
+                                    <td>0.785</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
+                                    <td>12 x 12</td>
+                                    <td>1.130</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">3</th>
-                                    <td colSpan={2}>Larry the Bird</td>
-                                    <td>@twitter</td>
+                                    <td>16 x 16</td>
+                                    <td>2.099</td>
                                 </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>20 x 20</td>
+                                    <td>3.140</td>
+                                </tr>
+
                             </tbody>
                         </table>
+
 
                     </div>
                     <div className="col-md-6">

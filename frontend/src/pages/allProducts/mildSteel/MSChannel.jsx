@@ -24,30 +24,57 @@ function MSChannel() {
                         <table className="table table-hover table-striped-columns">
                             <thead>
                                 <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
+                                    <th scope="col">Sl. No.</th>
+                                    <th scope="col">Size</th>
+                                    <th scope="col">Weight(Kg/m)</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
+                                    <td>MC 75 × 40</td>
+                                    <td>7.14</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
+                                    <td>MC 100 × 50</td>
+                                    <td>9.56</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">3</th>
+                                    <td>MC 125 × 65</td>
+                                    <td>13.10</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>MC 150 × 75</td>
+                                    <td>16.80</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>MC 200 × 75</td>
+                                    <td>22.30</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>MC 250 × 82</td>
+                                    <td>34.20</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>MC 300 × 90</td>
+                                    <td>36.30</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>MC 400 × 100</td>
+                                    <td>50.10</td>
+                                </tr>
+                                {/* <tr>
+                                    <th scope="row">3</th>
                                     <td colSpan={2}>Larry the Bird</td>
                                     <td>@twitter</td>
-                                </tr>
+                                </tr> */}
                             </tbody>
                         </table>
 

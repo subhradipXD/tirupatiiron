@@ -24,32 +24,56 @@ function MSRound() {
                         <table className="table table-hover table-striped-columns">
                             <thead>
                                 <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
+                                    <th scope="col">Sl. No.</th>
+                                    <th scope="col">Size (mm)</th>
+                                    <th scope="col">Weight (Kg/Mtr)</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
+                                    <td>12</td>
+                                    <td>0.89</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
+                                    <td>16</td>
+                                    <td>1.58</td>
                                 </tr>
+
                                 <tr>
                                     <th scope="row">3</th>
-                                    <td colSpan={2}>Larry the Bird</td>
-                                    <td>@twitter</td>
+                                    <td>20</td>
+                                    <td>2.47</td>
                                 </tr>
+
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>25</td>
+                                    <td>3.85</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>32</td>
+                                    <td>6.31</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>40</td>
+                                    <td>9.86</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>50</td>
+                                    <td>15.41</td>
+                                </tr>
+
                             </tbody>
                         </table>
+
 
                     </div>
                     <div className="col-md-6">
