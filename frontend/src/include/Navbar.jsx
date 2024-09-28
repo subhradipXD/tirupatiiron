@@ -57,22 +57,23 @@ function Navbar() {
                                             Mild Steel (MS)
                                         </a>
                                         <ul className="dropdown-menu ms-0 ps-0">
-                                            <li className="nav-item dropend">
-                                                <a className="nav-link dropdown-toggle ms-3 ms-sm-2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    MS Plate & Sheets
-                                                </a>
-                                                <ul className="dropdown-menu ms-0 ps-0">
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Plate-Sheets/MS-Plate">MS Plate</Link></li>
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Plate-Sheets/MS-Sheets">MS Sheets</Link></li>
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Plate-Sheets/MS-Checkered-Sheets">MS Checkered Sheets</Link></li>
-                                                </ul>
-                                            </li>
+
                                             <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Angle">MS Angle</Link></li>
                                             <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Channel">MS Channel</Link></li>
                                             <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Beam">MS Beam</Link></li>
                                             <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Round">MS Round</Link></li>
                                             <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Square-Bar">MS Square Bar</Link></li>
                                             <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Flat-Bar">MS Flat Bar</Link></li>
+                                        </ul>
+                                    </li>
+                                    <li className="nav-item dropend">
+                                        <a className="nav-link dropdown-toggle ms-3 ms-sm-2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            MS Plate & Sheets
+                                        </a>
+                                        <ul className="dropdown-menu ms-0 ps-0">
+                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Plate-Sheets/MS-Plate">MS Plate</Link></li>
+                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Plate-Sheets/MS-Sheets">MS Sheets</Link></li>
+                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Plate-Sheets/MS-Checkered-Sheets">MS Checkered Sheets</Link></li>
                                         </ul>
                                     </li>
                                     <li className="nav-item dropend">
@@ -127,18 +128,7 @@ function Navbar() {
 
                                     <li><Link className="dropdown-item" to="/Products/Cement">Cement</Link></li>
 
-                                    <li className="nav-item dropend">
-                                        <a className="nav-link dropdown-toggle ms-3 ms-sm-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Hardware
-                                        </a>
-                                        <ul className="dropdown-menu ms-0 ps-0">
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Hardware/TataAgriAndConstruction">Tata Agri & Construction Tools</Link></li>
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Hardware/TataHandTools">Tata Hand Tools</Link></li>
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Hardware/TataConsumables">Tata Consumables</Link></li>
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Hardware/TataGardenTools">Tata Garden Tools</Link></li>
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Hardware/TataWeldingElectrodes">Tata Welding Electrodes</Link></li>
-                                        </ul>
-                                    </li>
+                                    <li><Link className="dropdown-item" to="/Products/Hardware">Hardware</Link></li>
                                     <li><Link className="dropdown-item" to="/Products/Rail">Rail</Link></li>
                                     <li><Link className="dropdown-item" to="/Products/GodrejSafes">Godrej Safes</Link></li>
                                     <li><Link className="dropdown-item" to="/Products/BuildingProductSolutions">Building Product Solution</Link></li>

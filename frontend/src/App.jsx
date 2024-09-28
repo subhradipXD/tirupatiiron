@@ -39,16 +39,13 @@ import SeamlessPipe from './pages/allProducts/pipeAndHollow/SeamlessPipe';
 import ColorCoated from './pages/allProducts/corrugatedRoofingSheets/ColorCoated';
 import GIRoofingSheets from './pages/allProducts/corrugatedRoofingSheets/GIRoofingSheets';
 import AluminumPolyFRP from './pages/allProducts/corrugatedRoofingSheets/AluminumPolyFRP';
-import TataAgriAndConstructionTools from './pages/allProducts/hardware/TataAgriAndConstructionTools';
-import TataConsumables from './pages/allProducts/hardware/TataConsumables';
-import TataGardenTools from './pages/allProducts/hardware/TataGardenTools';
-import TataHandTools from './pages/allProducts/hardware/TataHandTools';
-import TataWeldingElectrodes from './pages/allProducts/hardware/TataWeldingElectrodes';
+
 import BuildingProductSolutions from './pages/allProducts/BuildingProductSolutions';
 import ReBar from './pages/allProducts/ReBar';
 import MSPlate from './pages/allProducts/mildSteel/msPlateAndSheets/MSPlate';
 import MSSheets from './pages/allProducts/mildSteel/msPlateAndSheets/MSSheets';
 import MSCheckeredSheets from './pages/allProducts/mildSteel/msPlateAndSheets/MSCheckeredSheets';
+import Hardware from './pages/allProducts/Hardware';
 
 
 
@@ -105,12 +102,6 @@ function App() {
           <Route path='/Products/Corrugated-Roofing-Sheets/GI-RoofingSheets' element={<GIRoofingSheets />} />
           <Route path='/Products/Corrugated-Roofing-Sheets/AluminumPolyFRP' element={<AluminumPolyFRP />} />
 
-          {/* Hardware Products */}
-          <Route path='/Products/Hardware/TataAgriAndConstruction' element={<TataAgriAndConstructionTools />} />
-          <Route path='/Products/Hardware/TataConsumables' element={<TataConsumables />} />
-          <Route path='/Products/Hardware/TataGardenTools' element={<TataGardenTools />} />
-          <Route path='/Products/Hardware/TataHandTools' element={<TataHandTools />} />
-          <Route path='/Products/Hardware/TataWeldingElectrodes' element={<TataWeldingElectrodes />} />
 
           {/* Others Products */}
           <Route path='/Products/Cement' element={<Cement />} />
@@ -118,6 +109,8 @@ function App() {
           <Route path='/Products/Rail' element={<Rail />} />
           <Route path='/Products/BuildingProductSolutions' element={<BuildingProductSolutions />} />
           <Route path='/Products/Re-Bar' element={<ReBar />} />
+          <Route path='/Products/Hardware' element={<Hardware />} />
+
 
         </Routes>
       </Router>
