@@ -9,12 +9,8 @@ import GodrejSafes from './pages/allProducts/GodrejSafes';
 import Rail from './pages/allProducts/Rail';
 
 import GISheets from './pages/allProducts/galvanizedSteel/GISheets';
-import GIAngle from './pages/allProducts/galvanizedSteel/GIAngle';
-import GIChannel from './pages/allProducts/galvanizedSteel/GIChannel';
-import GIBeam from './pages/allProducts/galvanizedSteel/GIBeam';
-import GIRound from './pages/allProducts/galvanizedSteel/GIRound';
-import GISquareBar from './pages/allProducts/galvanizedSteel/GISquareBar';
-import GIFlatBar from './pages/allProducts/galvanizedSteel/GIFlatBar';
+import GIAngleChannelBeam from './pages/allProducts/galvanizedSteel/GiAngleChannelBeam';
+
 
 import MSAngle from './pages/allProducts/mildSteel/MSAngle';
 import MSChannel from './pages/allProducts/mildSteel/MSChannel';
@@ -32,7 +28,6 @@ import SSSquareBar from './pages/allProducts/stainlessSteel/SSSquareBar';
 import SSFlatBar from './pages/allProducts/stainlessSteel/SSFlatBar';
 
 import GIPipe from './pages/allProducts/pipeAndHollow/GIPipe';
-import MSPipe from './pages/allProducts/pipeAndHollow/MSPipe';
 import SSPipe from './pages/allProducts/pipeAndHollow/SSPipe';
 import SeamlessPipe from './pages/allProducts/pipeAndHollow/SeamlessPipe';
 
@@ -46,6 +41,11 @@ import MSPlate from './pages/allProducts/mildSteel/msPlateAndSheets/MSPlate';
 import MSSheets from './pages/allProducts/mildSteel/msPlateAndSheets/MSSheets';
 import MSCheckeredSheets from './pages/allProducts/mildSteel/msPlateAndSheets/MSCheckeredSheets';
 import Hardware from './pages/allProducts/Hardware';
+import ShutterProfile from './pages/allProducts/ShutterProfile';
+import GIRoundSquareFlat from './pages/allProducts/galvanizedSteel/GIRoundSquareFlat';
+import MSPipe from './pages/allProducts/pipeAndHollow/msPipeAndHollow/MSPipe';
+import YST210 from './pages/allProducts/pipeAndHollow/msPipeAndHollow/YST210';
+import YST310And355 from './pages/allProducts/pipeAndHollow/msPipeAndHollow/YST310And355';
 
 
 
@@ -62,12 +62,8 @@ function App() {
 
           {/* GI Products */}
           <Route path='/Products/Galvanized-Steel/Sheets' element={<GISheets />} />
-          <Route path='/Products/Galvanized-Steel/Angle' element={<GIAngle />} />
-          <Route path='/Products/Galvanized-Steel/Channel' element={<GIChannel />} />
-          <Route path='/Products/Galvanized-Steel/Beam' element={<GIBeam />} />
-          <Route path='/Products/Galvanized-Steel/Round' element={<GIRound />} />
-          <Route path='/Products/Galvanized-Steel/Square-Bar' element={<GISquareBar />} />
-          <Route path='/Products/Galvanized-Steel/Flat-Bar' element={<GIFlatBar />} />
+          <Route path='/Products/Galvanized-Steel/AngleChannelBeam' element={<GIAngleChannelBeam />} />
+          <Route path='/Products/Galvanized-Steel/RoundSquareFlat' element={<GIRoundSquareFlat />} />
 
           {/* MS Products */}
           <Route path='/Products/Mild-Steel/Angle' element={<MSAngle />} />
@@ -93,7 +89,9 @@ function App() {
 
           {/* Pipe Products */}
           <Route path='/Products/Pipe-Hollow/GI-Pipe' element={<GIPipe />} />
-          <Route path='/Products/Pipe-Hollow/MS-Pipe' element={<MSPipe />} />
+          <Route path='/Products/Pipe-Hollow/MS/MS-Pipe' element={<MSPipe />} />
+          <Route path='/Products/Pipe-Hollow/MS/YST-210' element={<YST210 />} />
+          <Route path='/Products/Pipe-Hollow/MS/YST-310-355' element={<YST310And355 />} />
           <Route path='/Products/Pipe-Hollow/SS-Pipe' element={<SSPipe />} />
           <Route path='/Products/Pipe-Hollow/Seamless-Pipe' element={<SeamlessPipe />} />
 
@@ -110,7 +108,7 @@ function App() {
           <Route path='/Products/BuildingProductSolutions' element={<BuildingProductSolutions />} />
           <Route path='/Products/Re-Bar' element={<ReBar />} />
           <Route path='/Products/Hardware' element={<Hardware />} />
-
+          <Route path='/Products/ShutterProfile' element={<ShutterProfile />} />
 
         </Routes>
       </Router>

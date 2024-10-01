@@ -88,9 +88,9 @@ function ReBar() {
                                 </tr>
                             </tbody>
                         </table>
-
-
                     </div>
+
+
                     <div className="col-md-6">
                         <div className="container">
                             <h3>lorem ipsum</h3>

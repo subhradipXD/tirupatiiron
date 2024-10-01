@@ -82,12 +82,8 @@ function Navbar() {
                                         </a>
                                         <ul className="dropdown-menu ms-0 ps-0">
                                             <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Galvanized-Steel/Sheets">GI Sheets</Link></li>
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Galvanized-Steel/Angle">GI Angle</Link></li>
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Galvanized-Steel/Channel">GI Channel</Link></li>
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Galvanized-Steel/Beam">GI Beam</Link></li>
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Galvanized-Steel/Round">GI Round</Link></li>
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Galvanized-Steel/Square-Bar">GI Square Bar</Link></li>
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Galvanized-Steel/Flat-Bar">GI Flat Bar</Link></li>
+                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Galvanized-Steel/AngleChannelBeam">GI Angle & Channel & Beam</Link></li>
+                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Galvanized-Steel/RoundSquareFlat">GI Round & Square & Flat Bar</Link></li>
                                         </ul>
                                     </li>
                                     <li className="nav-item dropend">
@@ -110,7 +106,18 @@ function Navbar() {
                                         </a>
                                         <ul className="dropdown-menu ms-0 ps-0">
                                             <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Pipe-Hollow/GI-Pipe">GI</Link></li>
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Pipe-Hollow/MS-Pipe">MS</Link></li>
+                                            <li>
+                                                <li className="nav-item dropend">
+                                                    <a className="nav-link dropdown-toggle ms-3 ms-sm-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        MS
+                                                    </a>
+                                                    <ul className="dropdown-menu ms-0 ps-0">
+                                                        <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Pipe-Hollow/MS/MS-Pipe">MS Pipe</Link></li>
+                                                        <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Pipe-Hollow/MS/YST-210">YST-210</Link></li>
+                                                        <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Pipe-Hollow/MS/YST-310-355">YST-310 & 355</Link></li>
+                                                    </ul>
+                                                </li>
+                                            </li>
                                             <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Pipe-Hollow/SS-Pipe">SS</Link></li>
                                             <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Pipe-Hollow/Seamless-Pipe">Seamless</Link></li>
                                         </ul>
@@ -132,6 +139,8 @@ function Navbar() {
                                     <li><Link className="dropdown-item" to="/Products/Rail">Rail</Link></li>
                                     <li><Link className="dropdown-item" to="/Products/GodrejSafes">Godrej Safes</Link></li>
                                     <li><Link className="dropdown-item" to="/Products/BuildingProductSolutions">Building Product Solution</Link></li>
+                                    <li><Link className="dropdown-item" to="/Products/ShutterProfile">Shutter Profile</Link></li>
+
                                 </ul>
                             </li>
 
