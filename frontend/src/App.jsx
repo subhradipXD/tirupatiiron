@@ -10,6 +10,8 @@ import Rail from './pages/allProducts/Rail';
 
 import GISheets from './pages/allProducts/galvanizedSteel/GISheets';
 import GIAngleChannelBeam from './pages/allProducts/galvanizedSteel/GiAngleChannelBeam';
+import GIRoundSquareFlat from './pages/allProducts/galvanizedSteel/GIRoundSquareFlat';
+
 
 
 import MSAngle from './pages/allProducts/mildSteel/MSAngle';
@@ -19,13 +21,7 @@ import MSRound from './pages/allProducts/mildSteel/MSRound';
 import MSSquareBar from './pages/allProducts/mildSteel/MSSquareBar';
 import MSFlatBar from './pages/allProducts/mildSteel/MSFlatBar';
 
-import SSPlateSheets from './pages/allProducts/stainlessSteel/SSPlateSheets';
-import SSAngle from './pages/allProducts/stainlessSteel/SSAngle';
-import SSChannel from './pages/allProducts/stainlessSteel/SSChannel';
-import SSBeam from './pages/allProducts/stainlessSteel/SSBeam';
-import SSRound from './pages/allProducts/stainlessSteel/SSRound';
-import SSSquareBar from './pages/allProducts/stainlessSteel/SSSquareBar';
-import SSFlatBar from './pages/allProducts/stainlessSteel/SSFlatBar';
+
 
 import GIPipe from './pages/allProducts/pipeAndHollow/GIPipe';
 import SSPipe from './pages/allProducts/pipeAndHollow/SSPipe';
@@ -42,10 +38,12 @@ import MSSheets from './pages/allProducts/mildSteel/msPlateAndSheets/MSSheets';
 import MSCheckeredSheets from './pages/allProducts/mildSteel/msPlateAndSheets/MSCheckeredSheets';
 import Hardware from './pages/allProducts/Hardware';
 import ShutterProfile from './pages/allProducts/ShutterProfile';
-import GIRoundSquareFlat from './pages/allProducts/galvanizedSteel/GIRoundSquareFlat';
 import MSPipe from './pages/allProducts/pipeAndHollow/msPipeAndHollow/MSPipe';
 import YST210 from './pages/allProducts/pipeAndHollow/msPipeAndHollow/YST210';
 import YST310And355 from './pages/allProducts/pipeAndHollow/msPipeAndHollow/YST310And355';
+import SSSheets from './pages/allProducts/stainlessSteel/SSSheets';
+import SSAngleChannelBeam from './pages/allProducts/stainlessSteel/SSAngleChannelBeam';
+import SSRoundSquareFlat from './pages/allProducts/stainlessSteel/SSRoundSquareFlat';
 
 
 
@@ -72,20 +70,15 @@ function App() {
           <Route path='/Products/Mild-Steel/Round' element={<MSRound />} />
           <Route path='/Products/Mild-Steel/Square-Bar' element={<MSSquareBar />} />
           <Route path='/Products/Mild-Steel/Flat-Bar' element={<MSFlatBar />} />
-
           <Route path='/Products/Mild-Steel/Plate-Sheets/MS-Plate' element={<MSPlate />} />
           <Route path='/Products/Mild-Steel/Plate-Sheets/MS-Sheets' element={<MSSheets />} />
           <Route path='/Products/Mild-Steel/Plate-Sheets/MS-Checkered-Sheets' element={<MSCheckeredSheets />} />
 
 
           {/* SS Products */}
-          <Route path='/Products/Stainless-Steel/Plate-Sheets' element={<SSPlateSheets />} />
-          <Route path='/Products/Stainless-Steel/Angle' element={<SSAngle />} />
-          <Route path='/Products/Stainless-Steel/Channel' element={<SSChannel />} />
-          <Route path='/Products/Stainless-Steel/Beam' element={<SSBeam />} />
-          <Route path='/Products/Stainless-Steel/Round' element={<SSRound />} />
-          <Route path='/Products/Stainless-Steel/Square-Bar' element={<SSSquareBar />} />
-          <Route path='/Products/Stainless-Steel/Flat-Bar' element={<SSFlatBar />} />
+          <Route path='/Products/Stainless-Steel/Sheets' element={<SSSheets />} />
+          <Route path='/Products/Stainless-Steel/AngleChannelBeam' element={<SSAngleChannelBeam />} />
+          <Route path='/Products/Stainless-Steel/RoundSquareFlat' element={<SSRoundSquareFlat />} />
 
           {/* Pipe Products */}
           <Route path='/Products/Pipe-Hollow/GI-Pipe' element={<GIPipe />} />

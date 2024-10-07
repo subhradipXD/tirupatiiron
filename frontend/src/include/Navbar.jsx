@@ -57,7 +57,6 @@ function Navbar() {
                                             Mild Steel (MS)
                                         </a>
                                         <ul className="dropdown-menu ms-0 ps-0">
-
                                             <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Angle">MS Angle</Link></li>
                                             <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Channel">MS Channel</Link></li>
                                             <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Beam">MS Beam</Link></li>
@@ -91,13 +90,9 @@ function Navbar() {
                                             Stainless Steel (SS)
                                         </a>
                                         <ul className="dropdown-menu ms-0 ps-0">
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/Plate-Sheets">SS Plate / Sheets</Link></li>
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/Angle">SS Angle</Link></li>
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/Channel">SS Channel</Link></li>
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/Beam">SS Beam</Link></li>
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/Round">SS Round</Link></li>
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/Square-Bar">SS Square Bar</Link></li>
-                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/Flat-Bar">SS Flat Bar</Link></li>
+                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/Sheets">SS Sheets</Link></li>
+                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/AngleChannelBeam">SS Angle & Channel & Beam</Link></li>
+                                            <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/RoundSquareFlat">SS Round & Square & Flat Bar</Link></li>
                                         </ul>
                                     </li>
                                     <li className="nav-item dropend">
@@ -134,7 +129,6 @@ function Navbar() {
                                     </li>
 
                                     <li><Link className="dropdown-item" to="/Products/Cement">Cement</Link></li>
-
                                     <li><Link className="dropdown-item" to="/Products/Hardware">Hardware</Link></li>
                                     <li><Link className="dropdown-item" to="/Products/Rail">Rail</Link></li>
                                     <li><Link className="dropdown-item" to="/Products/GodrejSafes">Godrej Safes</Link></li>
