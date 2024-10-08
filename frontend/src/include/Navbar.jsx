@@ -62,7 +62,7 @@ function Navbar() {
 
             <nav className="navbar navbar-expand-lg bg-body-tertiary ps-4 sticky-top z-10 mt-3 nav-underline">
                 <div className="container-fluid">
-                    <Link className="navbar-brand" href="#">
+                    <Link className="navbar-brand" to="/">
                         <img src={Logo} alt="Logo" style={{ width: '35px', height: '35px' }} />
                     </Link>
                     <button

@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
-import Products from './pages/Products';
 
 import Cement from './pages/allProducts/Cement';
 import GodrejSafes from './pages/allProducts/GodrejSafes';
@@ -55,7 +54,6 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/AboutUs' element={<AboutUs />} />
           <Route path='/ContactUs' element={<ContactUs />} />
-          <Route path='/Products' element={<Products />} />
 
 
           {/* GI Products */}

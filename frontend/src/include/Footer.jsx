@@ -14,7 +14,6 @@ function Footer() {
                         <h5>Quick Links</h5>
                         <ul className="list-unstyled">
                             <li><a href="/" className="text-decoration-none">Home</a></li>
-                            <li><a href="/products" className="text-decoration-none">Products</a></li>
                             <li><a href="/aboutus" className="text-decoration-none">About Us</a></li>
                             <li><a href="/contactus" className="text-decoration-none">Contact Us</a></li>
                         </ul>
