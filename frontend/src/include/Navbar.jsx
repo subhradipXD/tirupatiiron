@@ -95,7 +95,7 @@ function Navbar() {
                                     type="button"
                                     onClick={() => toggleDropdown('PRODUCT')}
                                 >
-                                    Product
+                                    Products
                                 </button>
                                 {openDropdown === 'PRODUCT' && (
                                     <ul className="dropdown-menu show">
@@ -158,9 +158,11 @@ function Navbar() {
                                             </button>
                                             {openSubDropdown === 'Product4' && (
                                                 <ul className="dropdown-submenu show">
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/Sheets">SS Sheets</Link></li>
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/AngleChannelBeam">SS Angle & Channel & Beam</Link></li>
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/RoundSquareFlat">SS Round & Square & Flat Bar</Link></li>
+                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/Sheets">SS Plate Sheets</Link></li>
+                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/AngleChannelBeam">SS Angle & Channel</Link></li>
+                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/Flat">SS Flat</Link></li>
+                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/BrightBar">SS Bright Bar</Link></li>
+                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/Re-Bar">SS Re-Bar</Link></li>
                                                 </ul>
                                             )}
                                         </li>

@@ -40,9 +40,11 @@ import ShutterProfile from './pages/allProducts/ShutterProfile';
 import MSPipe from './pages/allProducts/pipeAndHollow/msPipeAndHollow/MSPipe';
 import YST210 from './pages/allProducts/pipeAndHollow/msPipeAndHollow/YST210';
 import YST310And355 from './pages/allProducts/pipeAndHollow/msPipeAndHollow/YST310And355';
-import SSSheets from './pages/allProducts/stainlessSteel/SSSheets';
 import SSAngleChannelBeam from './pages/allProducts/stainlessSteel/SSAngleChannelBeam';
-import SSRoundSquareFlat from './pages/allProducts/stainlessSteel/SSRoundSquareFlat';
+import SSPlateSheets from './pages/allProducts/stainlessSteel/SSPlateSheets';
+import SSFlat from './pages/allProducts/stainlessSteel/SSFlat';
+import SSBrightBar from './pages/allProducts/stainlessSteel/SSBrightBar';
+import SSReBar from './pages/allProducts/stainlessSteel/SSReBar';
 
 
 
@@ -74,9 +76,12 @@ function App() {
 
 
           {/* SS Products */}
-          <Route path='/Products/Stainless-Steel/Sheets' element={<SSSheets />} />
+          <Route path='/Products/Stainless-Steel/Sheets' element={<SSPlateSheets />} />
           <Route path='/Products/Stainless-Steel/AngleChannelBeam' element={<SSAngleChannelBeam />} />
-          <Route path='/Products/Stainless-Steel/RoundSquareFlat' element={<SSRoundSquareFlat />} />
+          <Route path='/Products/Stainless-Steel/Flat' element={<SSFlat />} />
+          <Route path='/Products/Stainless-Steel/BrightBar' element={<SSBrightBar />} />
+          <Route path='/Products/Stainless-Steel/Re-Bar' element={<SSReBar />} />
+
 
           {/* Pipe Products */}
           <Route path='/Products/Pipe-Hollow/GI-Pipe' element={<GIPipe />} />

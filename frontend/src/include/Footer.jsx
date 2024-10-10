@@ -3,25 +3,25 @@ import { MdOutlineAlternateEmail } from "react-icons/md";
 
 import { IoMdCall } from 'react-icons/io';
 import './footer.css';
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
-        <footer className="py-4 border-top-custom">
+        <footer className="pt-4 border-top-custom">
             <div className="container">
                 <div className="row">
                     {/* Quick Links */}
                     <div className="col-md-6 mb-3">
                         <h5>Quick Links</h5>
                         <ul className="list-unstyled">
-                            <li><a href="/" className="text-decoration-none">Home</a></li>
-                            <li><a href="/aboutus" className="text-decoration-none">About Us</a></li>
-                            <li><a href="/contactus" className="text-decoration-none">Contact Us</a></li>
+                            <li><Link to="/" className="text-decoration-none">Home</Link></li>
+                            <li><Link to="/aboutus" className="text-decoration-none">About Us</Link></li>
                         </ul>
                     </div>
 
                     {/* Contact Information */}
                     <div className="col-md-6 mb-3">
-                        <h5>Contact Us</h5>
+                        <h5><Link to="/contactus" className="text-decoration-none">Contact Us</Link></h5>
                         <ul className="list-unstyled">
                             <li><IoMdCall className="me-2" /> +91 9434035673</li>
                             <li className="mb-3">
@@ -52,8 +52,8 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="text-center py-3 border-top border-secondary">
-                <p className="mb-0">&copy; {new Date().getFullYear()} TIRUPATI IRON. All rights reserved.</p>
+            <div className="text-center py-3 border-top border-secondary bg-warning">
+                <p className="mb-0 text-black">&copy; {new Date().getFullYear()} TIRUPATI IRON. All rights reserved.</p>
             </div>
         </footer>
     );
