@@ -1,21 +1,22 @@
 import Navbar from "../../../../include/Navbar";
-import logo from "../../../../assets/Logo.jpg";
-
+import plate from "../../../../assets/MS/ms-plates.jpg";
 function MSPlate() {
     return (
         <>
             <Navbar />
             <div className="container">
                 <div className="row mt-3">
-                    <div className="col-md-2">
-                        <img src={logo} alt="" style={{ width: '100px', height: '100px' }} />
+                    <div className="col-12 col-md-4">
+                        <img src={plate} alt="" className="img-fluid rounded" />
                     </div>
-                    <div className="col-md-10">
+                    <div className="col-12 col-md-8">
                         <div className="container">
-                            <h3>MS Plate</h3>
-                            Hot Rolled Coils are made by continuous rolling of steel at high temperature, generally over 1,000 degrees Fahrenheit. The process involves passing metal sheets, produced from billets, through rollers above the metal’s (steel) recrystallization temperature. The metal sheets may be passed through the roller many times to achieve the desired dimension. During the cooling process, the hot rolled steel may reconfigure itself resulting in an end product that is more flexible and more loose as compared to the original product.  The hot rolled coils are manufactured without much delay in order to avoid the need for reheating the steel during the manufacturing. The entire process of manufacturing HR coils is known as hot rolling. As the steel cools off it automatically shrinks; usually it is not easy to predict the size and shape of the end product of a hot rolling.
-                            <br />
-                            Most of the time, the hot rolled coils also undergo a treatment called pickling, which basically helps in removing impurities and inorganic contaminants. The process involves passing the hot rolled steel through an acidic solution which helps in removing the surface oxides, and subsequently oiling the metal surface to make it corrosion-resistant.
+                            <h3>Lorem Ipsum</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+                                ducimus, ea animi earum illo pariatur, voluptatibus magni commodi,
+                                nam nemo id itaque cum in sed error provident officia incidunt debitis!
+                            </p>
                         </div>
                     </div>
                 </div>

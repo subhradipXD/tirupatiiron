@@ -1,22 +1,26 @@
 import Navbar from "../../../include/Navbar";
-import logo from '../../../assets/Logo.jpg';
-
+import sheets from "../../../assets/GI/GI Sheets.jpeg";
 function GISheets() {
     return (
         <>
             <Navbar />
             <div className="container">
                 <div className="row mt-3">
-                    <div className="col-md-2">
-                        <img src={logo} alt="" style={{ width: '100px', height: '100px' }} />
+                    <div className="col-12 col-md-4">
+                        <img src={sheets} alt="" className="img-fluid rounded" />
                     </div>
-                    <div className="col-md-10">
+                    <div className="col-12 col-md-8">
                         <div className="container">
-                            <h3>lorem ipsum</h3>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ducimus, ea animi earum illo pariatur, voluptatibus magni commodi, nam nemo id itaque cum in sed error provident officia incidunt debitis!
+                            <h3>Lorem Ipsum</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+                                ducimus, ea animi earum illo pariatur, voluptatibus magni commodi,
+                                nam nemo id itaque cum in sed error provident officia incidunt debitis!
+                            </p>
                         </div>
                     </div>
                 </div>
+
 
                 <div className="row mt-3">
                     <div className="col-md-6">

@@ -1,5 +1,7 @@
 import Navbar from "../../include/Navbar";
-import logo from '../../assets/Logo.jpg';
+import cement from "../../assets/Cement/Cement.jpg";
+import ultratech from "../../assets/Cement/UltraTech Cement.jpg";
+import ambuja from "../../assets/Cement/Ambuja Cement.jpg";
 
 function Cement() {
     return (
@@ -7,12 +9,18 @@ function Cement() {
             <Navbar />
             <div className="container">
                 <div className="row mt-3">
-                    <div className="col-md-2">
-                        <img src={logo} alt="" style={{ width: '100px', height: '100px' }} />
+                    <div className="col-12 col-md-4">
+                        <img src={cement} alt="" className="img-fluid rounded" />
                     </div>
-                    <div className="col-md-10">
-                        <h3>lorem ipsum</h3>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dolorum nulla voluptatum numquam, velit corrupti aliquid, unde facilis deserunt a adipisci alias dolores? Velit expedita voluptatem ut officia rerum eius.
+                    <div className="col-12 col-md-8">
+                        <div className="container">
+                            <h3>Lorem Ipsum</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+                                ducimus, ea animi earum illo pariatur, voluptatibus magni commodi,
+                                nam nemo id itaque cum in sed error provident officia incidunt debitis!
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -21,8 +29,9 @@ function Cement() {
                         <div className="card text-center mb-3 card-hover" data-bs-toggle="modal" data-bs-target="#cardModal1" >
                             <div className="card-body">
                                 <h5 className="card-title">UltraTech Cement</h5>
-                                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" className="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cardModal1">View Products</a>
+                                <img src={ultratech} alt="" className="img-fluid rounded" style={{ height: "200px" }} />
+                                <br />
+                                <a href="#" className="btn btn-warning mt-2" data-bs-toggle="modal" data-bs-target="#cardModal1">View Products</a>
                             </div>
                         </div>
                     </div>
@@ -31,8 +40,9 @@ function Cement() {
                         <div className="card text-center mb-3 card-hover" data-bs-toggle="modal" data-bs-target="#cardModal2" >
                             <div className="card-body">
                                 <h5 className="card-title">Ambuja Cement</h5>
-                                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" className="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cardModal2">View Products</a>
+                                <img src={ambuja} alt="" className="img-fluid rounded" style={{ height: "200px" }} />
+                                <br />
+                                <a href="#" className="btn btn-warning mt-2" data-bs-toggle="modal" data-bs-target="#cardModal2">View Products</a>
                             </div>
                         </div>
                     </div>

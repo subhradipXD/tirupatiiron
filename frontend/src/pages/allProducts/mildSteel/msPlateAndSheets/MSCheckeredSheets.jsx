@@ -1,33 +1,21 @@
 import Navbar from "../../../../include/Navbar";
-// import logo from "../../../../assets/Logo.jpg";
+import chercker from "../../../../assets/MS/ms-checker-sheet.jpeg";
 
 function MSCheckeredSheets() {
     return (
         <>
             <Navbar />
             <div className="container">
-                {/* <div className="row mt-3">
-                    <div className="col-md-2">
-                        <img src={logo} alt="" style={{ width: '100px', height: '100px' }} />
-                    </div>
-                    <div className="col-md-10">
-                        <div className="container">
-                            <h3>lorem ipsum</h3>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ducimus, ea animi earum illo pariatur, voluptatibus magni commodi, nam nemo id itaque cum in sed error provident officia incidunt debitis!
-                        </div>
-                    </div>
-                </div> */}
-
                 <div className="row mt-5">
                     <div className="container entry-content">
                         <div className="product-display">
                             <div className="row">
-                                <div className="col-sm-6">
+                                <div className="col-12 col-md-4">
                                     <div className="product-image">
-                                        <img src="https://raunaqsteels.com/wp-content/uploads/2019/03/chequred.jpg" alt="MS plate supplier in Chennai" className="img-fluid" style={{ maxWidth: '100%', height: 'auto' }} />
+                                        <img src={chercker} alt="MS plate supplier in Chennai" className="img-fluid rounded" />
                                     </div>
                                 </div>
-                                <div className="col-sm-6">
+                                <div className="col-12 col-md-8">
                                     <div className="product-text">
                                         <h3>Checkered Sheet</h3>
                                         <p>Steel takes on many forms when put through the fabrication process. They can be hard TMT bars at one point but can also be beaten into sheets to fit the requirement of the project. In the line of Steel products that we produce, the most popular is the <strong>MS chequered plate</strong>. They stand as a perfect example of the modern usage of steel. These plates have a high core strength that can be very much used for reinforcing purposes across a variety of situations in the construction industry. These plates generally tend to have a tough outer core but a soft inner core.</p>

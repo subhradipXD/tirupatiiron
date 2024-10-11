@@ -1,8 +1,8 @@
 import Navbar from "../../include/Navbar";
-import logo from "../../assets/Logo.jpg";
 import AgriAndAlliedBusiness from "../../assets/pdf/Agri-RCP (1).pdf";
 import IndustrialAndHardwareConsumables from "../../assets/pdf/Consumables_MRP_Jul22-Compressed (1).pdf";
 import TradeHandTools from "../../assets/pdf/GPHT-June23-compressed (1).pdf";
+import hardware from "../../assets/Hardware.jpg";
 
 function Hardware() {
     return (
@@ -10,12 +10,18 @@ function Hardware() {
             <Navbar />
             <div className="container">
                 <div className="row mt-3">
-                    <div className="col-md-2">
-                        <img src={logo} alt="" style={{ width: '100px', height: '100px' }} />
+                    <div className="col-12 col-md-4">
+                        <img src={hardware} alt="" className="img-fluid rounded" />
                     </div>
-                    <div className="col-md-10">
-                        <h3>lorem ipsum</h3>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dolorum nulla voluptatum numquam, velit corrupti aliquid, unde facilis deserunt a adipisci alias dolores? Velit expedita voluptatem ut officia rerum eius.
+                    <div className="col-12 col-md-8">
+                        <div className="container">
+                            <h3>Lorem Ipsum</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+                                ducimus, ea animi earum illo pariatur, voluptatibus magni commodi,
+                                nam nemo id itaque cum in sed error provident officia incidunt debitis!
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -26,9 +32,12 @@ function Hardware() {
 
                             <div className="card-body">
                                 <h5 className="card-title">Agri & Allied Business</h5>
-                                <a href="#" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cardModal1">View Products</a>
-                                <a href={AgriAndAlliedBusiness} className="ms-2 btn btn-warning" download>Download PDF</a>
+                                <div className="d-flex flex-column flex-md-row">
+                                    <a href="#" className="btn btn-primary mb-2 mb-md-0 ms-md-auto" data-bs-toggle="modal" data-bs-target="#cardModal1">View Products</a>
+                                    <a href={AgriAndAlliedBusiness} className="ms-md-2 btn btn-warning me-md-auto" download>Download PDF</a>
+                                </div>
                             </div>
+
                         </div>
                     </div>
 
@@ -43,8 +52,10 @@ function Hardware() {
 
                             <div className="card-body">
                                 <h5 className="card-title">Industrial & Hardware Consumables</h5>
-                                <a href="#" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cardModal2">View Products</a>
-                                <a href={IndustrialAndHardwareConsumables} className="ms-2 btn btn-warning" download>Download PDF</a>
+                                <div className="d-flex flex-column flex-md-row">
+                                    <a href="#" className="btn btn-primary mb-2 mb-md-0 ms-md-auto" data-bs-toggle="modal" data-bs-target="#cardModal2">View Products</a>
+                                    <a href={IndustrialAndHardwareConsumables} className="ms-md-2 btn btn-warning me-md-auto" download>Download PDF</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -56,8 +67,10 @@ function Hardware() {
 
                             <div className="card-body">
                                 <h5 className="card-title">Trade Hand Tools</h5>
-                                <a href="#" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cardModal3">View Products</a>
-                                <a href={TradeHandTools} className="ms-2 btn btn-warning" download>Download PDF</a>
+                                <div className="d-flex flex-column flex-md-row">
+                                    <a href="#" className="btn btn-primary mb-2 mb-md-0 ms-md-auto" data-bs-toggle="modal" data-bs-target="#cardModal3">View Products</a>
+                                    <a href={TradeHandTools} className="ms-md-2 btn btn-warning me-md-auto" download>Download PDF</a>
+                                </div>
                             </div>
                         </div>
                     </div>
