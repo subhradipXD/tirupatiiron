@@ -109,12 +109,12 @@ function Navbar() {
                                             </button>
                                             {openSubDropdown === 'Product1' && (
                                                 <ul className="dropdown-submenu show">
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Angle">MS Angle</Link></li>
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Channel">MS Channel</Link></li>
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Beam">MS Beam</Link></li>
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Round">MS Round</Link></li>
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Square-Bar">MS Square Bar</Link></li>
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Flat-Bar">MS Flat Bar</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Angle">MS Angle</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Channel">MS Channel</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Beam">MS Beam</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Round">MS Round</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Square-Bar">MS Square Bar</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Flat-Bar">MS Flat Bar</Link></li>
                                                 </ul>
                                             )}
                                         </li>
@@ -128,9 +128,9 @@ function Navbar() {
                                             </button>
                                             {openSubDropdown === 'Product2' && (
                                                 <ul className="dropdown-submenu show">
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Plate-Sheets/MS-Plate">MS Plate</Link></li>
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Plate-Sheets/MS-Sheets">MS Sheets</Link></li>
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Plate-Sheets/MS-Checkered-Sheets">MS Checkered Sheets</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Plate-Sheets/MS-Plate">MS Plate</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Plate-Sheets/MS-Sheets">MS Sheets</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Mild-Steel/Plate-Sheets/MS-Checkered-Sheets">MS Checkered Sheets</Link></li>
                                                 </ul>
                                             )}
                                         </li>
@@ -143,9 +143,9 @@ function Navbar() {
                                             </button>
                                             {openSubDropdown === 'Product3' && (
                                                 <ul className="dropdown-submenu show">
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Galvanized-Steel/Sheets">GI Sheets</Link></li>
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Galvanized-Steel/AngleChannelBeam">GI Angle & Channel & Beam</Link></li>
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Galvanized-Steel/RoundSquareFlat">GI Round & Square & Flat Bar</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Galvanized-Steel/Sheets">GI Sheets</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Galvanized-Steel/AngleChannelBeam">GI Angle & Channel & Beam</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Galvanized-Steel/RoundSquareFlat">GI Round & Square & Flat Bar</Link></li>
                                                 </ul>
                                             )}
                                         </li>
@@ -158,11 +158,11 @@ function Navbar() {
                                             </button>
                                             {openSubDropdown === 'Product4' && (
                                                 <ul className="dropdown-submenu show">
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/Sheets">SS Plate Sheets</Link></li>
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/AngleChannelBeam">SS Angle & Channel</Link></li>
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/Flat">SS Flat</Link></li>
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/BrightBar">SS Bright Bar</Link></li>
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/Re-Bar">SS Re-Bar</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/Sheets">SS Plate Sheets</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/AngleChannelBeam">SS Angle & Channel</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/Flat">SS Flat</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/BrightBar">SS Bright Bar</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Stainless-Steel/Re-Bar">SS Re-Bar</Link></li>
                                                 </ul>
                                             )}
                                         </li>
@@ -175,9 +175,9 @@ function Navbar() {
                                             </button>
                                             {openSubDropdown === 'Product5' && (
                                                 <ul className="dropdown-submenu show">
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Pipe-Hollow/GI-Pipe">GI</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Pipe-Hollow/GI-Pipe">GI</Link></li>
                                                     {/* Nested dropdown */}
-                                                    <li>
+                                                    <li className="list-group-item">
                                                         <button
                                                             className="dropdown-item dropdown-toggle"
                                                             onClick={() => toggleNestedSubDropdown('Product5Nested')}
@@ -186,14 +186,14 @@ function Navbar() {
                                                         </button>
                                                         {openNestedSubDropdown === 'Product5Nested' && (
                                                             <ul className="dropdown-submenu show">
-                                                                <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Pipe-Hollow/MS/MS-Pipe">MS Pipe</Link></li>
-                                                                <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Pipe-Hollow/MS/YST-210">YST-210</Link></li>
-                                                                <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Pipe-Hollow/MS/YST-310-355">YST-310 & 355</Link></li>
+                                                                <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Pipe-Hollow/MS/MS-Pipe">MS Pipe</Link></li>
+                                                                <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Pipe-Hollow/MS/YST-210">YST-210</Link></li>
+                                                                <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Pipe-Hollow/MS/YST-310-355">YST-310 & 355</Link></li>
                                                             </ul>
                                                         )}
                                                     </li>
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Pipe-Hollow/SS-Pipe">SS</Link></li>
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Pipe-Hollow/Seamless-Pipe">Seamless</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Pipe-Hollow/SS-Pipe">SS</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Pipe-Hollow/Seamless-Pipe">Seamless</Link></li>
                                                 </ul>
                                             )}
                                         </li>
@@ -206,9 +206,9 @@ function Navbar() {
                                             </button>
                                             {openSubDropdown === 'Product6' && (
                                                 <ul className="dropdown-submenu show">
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Corrugated-Roofing-Sheets/ColorCoated">Color Coated</Link></li>
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Corrugated-Roofing-Sheets/GI-RoofingSheets">GI</Link></li>
-                                                    <li><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Corrugated-Roofing-Sheets/AluminumPolyFRP">Aluminum & Poly Carbonate & FRP</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Corrugated-Roofing-Sheets/ColorCoated">Color Coated</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Corrugated-Roofing-Sheets/GI-RoofingSheets">GI</Link></li>
+                                                    <li className="list-group-item"><Link className="dropdown-item mt-2 mb-2 pt-2 pb-2" to="/Products/Corrugated-Roofing-Sheets/AluminumPolyFRP">Aluminum & Poly Carbonate & FRP</Link></li>
                                                 </ul>
                                             )}
                                         </li>
