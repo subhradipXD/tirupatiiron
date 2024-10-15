@@ -8,9 +8,8 @@ import GodrejSafes from './pages/allProducts/GodrejSafes';
 import Rail from './pages/allProducts/Rail';
 
 import GISheets from './pages/allProducts/galvanizedSteel/GISheets';
-import GIAngleChannelBeam from './pages/allProducts/galvanizedSteel/GiAngleChannelBeam';
+import GIAngleChannelBeam from './pages/allProducts/galvanizedSteel/GIAngleChannelBeam';
 import GIRoundSquareFlat from './pages/allProducts/galvanizedSteel/GIRoundSquareFlat';
-
 
 
 import MSAngle from './pages/allProducts/mildSteel/MSAngle';
