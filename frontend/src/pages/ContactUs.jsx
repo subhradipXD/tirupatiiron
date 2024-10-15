@@ -10,8 +10,6 @@ import './styles.css';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
-
 function ContactUs() {
     const [formData, setFormData] = useState({
         name: "",
@@ -21,8 +19,12 @@ function ContactUs() {
         feedback: "",
     });
 
-    const [showModal, setShowModal] = useState(false); // For thank you modal
     const [error, setError] = useState("");
+    const [loading, setLoading] = useState(false);
+
+    // Define the patterns here
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phonePattern = /^\d{10}$/;
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -30,10 +32,29 @@ function ContactUs() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // Validate form data
-        if (!formData.name || !formData.email || !formData.phone || !formData.feedback) {
+        setLoading(true);
+
+        // Validate email format
+        if (!emailPattern.test(formData.email)) {
+            setError("Please enter a valid email address.");
+            toast.error("Please enter a valid email address.");
+            setLoading(false);
+            return;
+        }
+
+        // Validate phone format (e.g., digits only, 10 digits)
+        if (!phonePattern.test(formData.phone)) {
+            setError("Please enter a valid 10-digit phone number.");
+            toast.error("Please enter a valid 10-digit phone number.");
+            setLoading(false);
+            return;
+        }
+
+        // Validate required fields
+        if (!formData.name || !formData.feedback) {
             setError("Please fill in all required fields.");
-            toast.error("Please fill in all required fields."); // Toast for error
+            toast.error("Please fill in all required fields.");
+            setLoading(false);
             return;
         }
 
@@ -50,7 +71,7 @@ function ContactUs() {
                 email: "",
                 phone: "",
                 address: "",
-                feedback: ""
+                feedback: "",
             });
 
             // Show success toast
@@ -60,8 +81,9 @@ function ContactUs() {
             console.error("Error sending feedback:", error);
             toast.error("There was an error sending your feedback. Please try again later.");
         }
-    };
 
+        setLoading(false);
+    };
 
     return (
         <>
@@ -91,8 +113,6 @@ function ContactUs() {
                             <h4 className="pt-5">Shop Hours</h4>
                             <p>We are open from <strong>8:00 AM to 8:00 PM</strong>, Monday to Saturday.</p>
                             <p><strong>Closed on Sundays.</strong></p>
-                        </div>  <div className="row">
-
                         </div>
                     </div>
 
@@ -147,7 +167,7 @@ function ContactUs() {
                                             name="name"
                                             value={formData.name}
                                             onChange={handleChange}
-                                            className="form-control form-control-underline"
+                                            className={`form-control form-control-underline ${!formData.name && error ? 'invalid' : ''}`}
                                             placeholder="Enter your name"
                                             required
                                         />
@@ -161,7 +181,7 @@ function ContactUs() {
                                             name="email"
                                             value={formData.email}
                                             onChange={handleChange}
-                                            className="form-control form-control-underline"
+                                            className={`form-control form-control-underline ${!emailPattern.test(formData.email) && error ? 'invalid' : ''}`}
                                             placeholder="Enter your email"
                                             required
                                         />
@@ -175,7 +195,7 @@ function ContactUs() {
                                             name="phone"
                                             value={formData.phone}
                                             onChange={handleChange}
-                                            className="form-control form-control-underline"
+                                            className={`form-control form-control-underline ${!phonePattern.test(formData.phone) && error ? 'invalid' : ''}`}
                                             placeholder="Enter your phone number"
                                             required
                                         />
@@ -201,7 +221,7 @@ function ContactUs() {
                                             name="feedback"
                                             value={formData.feedback}
                                             onChange={handleChange}
-                                            className="form-control form-control-underline"
+                                            className={`form-control form-control-underline ${!formData.feedback && error ? 'invalid' : ''}`}
                                             rows="3"
                                             placeholder="Enter your feedback"
                                             required
@@ -210,8 +230,8 @@ function ContactUs() {
 
                                     {error && <p className="text-danger">{error}</p>}
 
-                                    <button type="submit" className="btn btn-primary">
-                                        Submit
+                                    <button type="submit" className="btn btn-primary" disabled={loading}>
+                                        {loading ? 'Submitting...' : 'Submit'}
                                     </button>
                                 </form>
                             </div>
@@ -219,27 +239,6 @@ function ContactUs() {
                     </div>
                 </div>
             </div>
-
-            {/* Thank You Modal */}
-            {showModal && (
-                <div className="modal fade show" tabIndex="-1" style={{ display: 'block' }} aria-labelledby="thankYouModalLabel" aria-hidden="true">
-                    <div className="modal-dialog">
-                        <div className="modal-content">
-                            <div className="modal-header">
-                                <h5 className="modal-title" id="thankYouModalLabel">Thank You</h5>
-                                <button type="button" className="btn-close" onClick={() => setShowModal(false)} aria-label="Close"></button>
-                            </div>
-                            <div className="modal-body">
-                                <p>Thank you for your feedback! We will get back to you soon.</p>
-                            </div>
-                            <div className="modal-footer">
-                                <button type="button" className="btn btn-secondary" onClick={() => setShowModal(false)}>Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            )}
-
             <Footer />
         </>
     );
