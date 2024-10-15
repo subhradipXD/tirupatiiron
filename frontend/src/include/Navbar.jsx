@@ -43,7 +43,7 @@ function Navbar() {
             <div className="d-flex align-items-center ps-3 pt-3">
                 <img src={Logo} alt="Logo" style={{ width: '70px', height: '70px' }} />
                 <div className="ms-3">
-                    <div className="fs-1">AMI BHOGOBAN</div>
+                    <div className="fs-1">TIRUPATI IRON</div>
                     <div>COMMERCIAL PRIVATE LIMITED</div>
                 </div>
 
