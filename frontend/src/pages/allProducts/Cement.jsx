@@ -1,7 +1,7 @@
 import Navbar from "../../include/Navbar";
 import cement from "../../assets/Cement/Cement.jpg";
-import ultratech from "../../assets/Cement/UltraTech Cement.jpg";
-import ambuja from "../../assets/Cement/Ambuja Cement.jpg";
+import ultratech from "../../assets/Cement/UltraTechCement.jpg";
+import ambuja from "../../assets/Cement/AmbujaCement.jpg";
 
 function Cement() {
     return (
