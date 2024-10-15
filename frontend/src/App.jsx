@@ -8,7 +8,7 @@ import GodrejSafes from './pages/allProducts/GodrejSafes';
 import Rail from './pages/allProducts/Rail';
 
 import GISheets from './pages/allProducts/galvanizedSteel/GISheets';
-// import GIAngleChannelBeam from './pages/allProducts/galvanizedSteel/GiAngleChannelBeam';
+import GIAngleChannelBeam from './pages/allProducts/galvanizedSteel/GiAngleChannelBeam';
 import GIRoundSquareFlat from './pages/allProducts/galvanizedSteel/GIRoundSquareFlat';
 
 
@@ -60,7 +60,7 @@ function App() {
 
           {/* GI Products */}
           <Route path='/Products/Galvanized-Steel/Sheets' element={<GISheets />} />
-          {/* <Route path='/Products/Galvanized-Steel/AngleChannelBeam' element={<GIAngleChannelBeam />} /> */}
+          <Route path='/Products/Galvanized-Steel/AngleChannelBeam' element={<GIAngleChannelBeam />} />
           <Route path='/Products/Galvanized-Steel/RoundSquareFlat' element={<GIRoundSquareFlat />} />
 
           {/* MS Products */}
