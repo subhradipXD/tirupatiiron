@@ -42,7 +42,7 @@ function GIPipe() {
                     <div className="col-md-6">
                         <div className="card text-center mb-3 card-hover" data-bs-toggle="modal" data-bs-target="#cardModal3"  >
                             <div className="card-body">
-                                <h5 className="card-title">GI Round Hollow Section</h5>
+                                <h5 className="card-title">GI Rectangle Hollow Section</h5>
                                 <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 <a href="#" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cardModal3">Go somewhere</a>
                             </div>

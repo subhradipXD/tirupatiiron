@@ -92,7 +92,7 @@ function SSPlateSheets() {
                           <strong>Width (in mm):</strong> Up to 1500 mm
                         </li>
                         <li className="list-group-item">
-                          <strong>Thickness (in mm):</strong> 2 to 2 mm
+                          <strong>Thickness (in mm):</strong> 2 to 25 mm
                         </li>
                         <li className="list-group-item">
                           <strong>Length:</strong> Coil form or length as required
