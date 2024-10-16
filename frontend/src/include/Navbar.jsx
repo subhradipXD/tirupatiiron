@@ -40,7 +40,7 @@ function Navbar() {
 
     return (
         <>
-            <div className="d-flex align-items-center ps-3 pt-3">
+            <div className="d-flex align-items-center ps-3 pt-3" style={{ fontFamily: 'Arvo, serif' }}>
                 <img src={Logo} alt="Logo" style={{ width: '70px', height: '70px' }} />
                 <div className="ms-3">
                     <div className="fs-1">TIRUPATI IRON</div>
@@ -60,7 +60,7 @@ function Navbar() {
                 </div>
             </div>
 
-            <nav className="navbar navbar-expand-lg bg-body-tertiary ps-4 sticky-top z-10 mt-3 nav-underline">
+            <nav className="navbar navbar-expand-lg bg-body-tertiary ps-4 sticky-top z-10 mt-3 nav-underline" style={{ fontFamily: 'Arvo, serif' }}>
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">
                         <img src={Logo} alt="Logo" style={{ width: '35px', height: '35px' }} />
@@ -85,7 +85,7 @@ function Navbar() {
                                     aria-current={location.pathname === '/' ? 'page' : undefined}
                                     to="/"
                                 >
-                                    Home
+                                    HOME
                                 </Link>
                             </li>
 
@@ -95,7 +95,7 @@ function Navbar() {
                                     type="button"
                                     onClick={() => toggleDropdown('PRODUCT')}
                                 >
-                                    Products
+                                    PRODUCTS
                                 </button>
                                 {openDropdown === 'PRODUCT' && (
                                     <ul className="dropdown-menu show">
@@ -228,7 +228,7 @@ function Navbar() {
                                     aria-current={location.pathname === '/AboutUs' ? 'page' : undefined}
                                     to="/AboutUs"
                                 >
-                                    About Us
+                                    ABOUT US
                                 </Link>
                             </li>
 
@@ -238,7 +238,7 @@ function Navbar() {
                                     aria-current={location.pathname === '/ContactUs' ? 'page' : undefined}
                                     to="/ContactUs"
                                 >
-                                    Contact Us
+                                    CONTACT US
                                 </Link>
                             </li>
                         </ul>
